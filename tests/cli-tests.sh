@@ -79,12 +79,40 @@ assert_output_contains "status after reset 180" "180" "${CLI[@]}" status
 
 logs_count="$("${COMPOSE[@]}" exec -T cli mysql -h mysql -u leetcode -pleetcode_dev leetcode -N -e "SELECT COUNT(*) FROM Logs;")"
 if [[ "${logs_count}" == "7" ]]; then
-  echo "PASS: reset 180 loaded Logs with 7 rows"
+  echo "PASS: reset without --seed loads setup.sql only (7 Logs rows)"
   pass=$((pass + 1))
 else
   echo "FAIL: expected 7 rows in Logs, got ${logs_count}" >&2
   fail=$((fail + 1))
 fi
+
+"${CLI[@]}" reset 180 --seed --yes
+logs_seeded="$("${COMPOSE[@]}" exec -T cli mysql -h mysql -u leetcode -pleetcode_dev leetcode -N -e "SELECT COUNT(*) FROM Logs;")"
+if [[ "${logs_seeded}" == "14" ]]; then
+  echo "PASS: reset --seed runs setup then seed (14 Logs rows)"
+  pass=$((pass + 1))
+else
+  echo "FAIL: expected 14 Logs rows after reset --seed, got ${logs_seeded}" >&2
+  fail=$((fail + 1))
+fi
+
+"${CLI[@]}" reset 180 --yes
+logs_base="$("${COMPOSE[@]}" exec -T cli mysql -h mysql -u leetcode -pleetcode_dev leetcode -N -e "SELECT COUNT(*) FROM Logs;")"
+"${CLI[@]}" seed 180
+logs_after_seed="$("${COMPOSE[@]}" exec -T cli mysql -h mysql -u leetcode -pleetcode_dev leetcode -N -e "SELECT COUNT(*) FROM Logs;")"
+if [[ "${logs_base}" == "7" && "${logs_after_seed}" == "14" ]]; then
+  echo "PASS: seed command appends seed.sql without reset"
+  pass=$((pass + 1))
+else
+  echo "FAIL: seed expected 7 then 14 Logs rows, got ${logs_base} -> ${logs_after_seed}" >&2
+  fail=$((fail + 1))
+fi
+
+assert_fails "duplicate seed rejected" "${CLI[@]}" seed 180
+
+assert_fails "seed rejected when question has no seed file" "${CLI[@]}" seed 176
+
+assert_output_contains "list marks seed datasets" "[seed]" "${CLI[@]}" list
 
 assert_fails "load 181 refuses without reset" "${CLI[@]}" load 181
 

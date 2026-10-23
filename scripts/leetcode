@@ -13,6 +13,8 @@ fi
 source "${LIB_DIR}/config.sh"
 # shellcheck source=lib/manifest.sh
 source "${LIB_DIR}/manifest.sh"
+# shellcheck source=lib/flags.sh
+source "${LIB_DIR}/flags.sh"
 # shellcheck source=lib/db.sh
 source "${LIB_DIR}/db.sh"
 
@@ -25,7 +27,8 @@ leetcode-sql-toolkit — local SQL practice CLI
 Usage:
   leetcode list
   leetcode load <question_id>
-  leetcode reset <question_id> [--yes]
+  leetcode reset <question_id> [--seed] [--yes]
+  leetcode seed <question_id>
   leetcode status
   leetcode shell
   leetcode validate [question_id]
@@ -33,16 +36,20 @@ Usage:
 
 Database engine: MySQL (fixed default for this project).
 
-load   — Import a dataset only if the practice database is empty or the same question is already active.
-reset  — Replace all tables/data in the dedicated practice database, then load the selected dataset.
-         Prompts for confirmation unless --yes is passed.
+load   — Import setup.sql only (LeetCode sample data). Never runs seed.sql.
+reset  — Drop user tables in the practice database, import setup.sql, optionally seed.sql.
+seed   — Run seed.sql for the active question without resetting existing data.
+
+Options (reset):
+  --seed  After setup.sql, also import the question's seed.sql (manifest must list a seed file).
+  --yes   Skip interactive confirmation.
 
 Examples:
   leetcode list
-  leetcode load 180
-  leetcode reset 182 --yes
+  leetcode reset 180 --yes
+  leetcode reset 180 --seed --yes
+  leetcode seed 180
   leetcode status
-  leetcode shell
 
 EOF
   load_config
@@ -80,6 +87,7 @@ cmd_load() {
   fi
 
   info "Loading question ${DATASET_ID}: ${DATASET_TITLE}..."
+  clear_seed_applied_flag
   import_sql_file "${DATASET_SQL_PATH}"
   meta_set "active_question_id" "${DATASET_ID}"
   meta_set "active_question_title" "${DATASET_TITLE}"
@@ -87,18 +95,25 @@ cmd_load() {
 }
 
 cmd_reset() {
-  local qid="${1:?question id required}"
-  local assume_yes="${2:-}"
+  if ! parse_question_flags "$@"; then
+    die "Usage: leetcode reset <question_id> [--seed] [--yes]"
+  fi
 
   load_config
   validate_manifest
-  lookup_dataset "${qid}"
+  lookup_dataset "${QUESTION_ID}"
+  if [[ "${FLAG_SEED}" == "1" ]]; then
+    require_seed_available
+  fi
   check_db_connection
   assert_practice_database
 
-  if [[ "${assume_yes}" != "--yes" ]]; then
+  if [[ "${FLAG_YES}" != "1" ]]; then
     echo "This will DROP all tables and data in the '${LEETCODE_PRACTICE_DATABASE}' practice database"
     echo "and load question ${DATASET_ID}: ${DATASET_TITLE}."
+    if [[ "${FLAG_SEED}" == "1" ]]; then
+      echo "Seed file ${DATASET_SEED_FILE} will be applied after setup.sql."
+    fi
     echo -n "Type 'yes' to continue: "
     read -r confirm
     [[ "${confirm}" == "yes" ]] || die "Reset cancelled."
@@ -110,10 +125,41 @@ cmd_reset() {
   ensure_meta_table
   info "Resetting practice database '${LEETCODE_PRACTICE_DATABASE}'..."
   reset_database_objects
+  clear_seed_applied_flag
   import_sql_file "${DATASET_SQL_PATH}"
+  if [[ "${FLAG_SEED}" == "1" ]]; then
+    import_seed_sql
+  fi
   meta_set "active_question_id" "${DATASET_ID}"
   meta_set "active_question_title" "${DATASET_TITLE}"
-  info "Reset complete. Active question: ${DATASET_ID} (${DATASET_TITLE})."
+  if [[ "${FLAG_SEED}" == "1" ]]; then
+    info "Reset complete with seed. Active question: ${DATASET_ID} (${DATASET_TITLE})."
+  else
+    info "Reset complete. Active question: ${DATASET_ID} (${DATASET_TITLE})."
+  fi
+}
+
+cmd_seed() {
+  local qid="${1:?question id required}"
+  load_config
+  validate_manifest
+  lookup_dataset "${qid}"
+  require_seed_available
+  check_db_connection
+  acquire_operation_lock
+  trap release_operation_lock EXIT
+
+  ensure_meta_table
+  local active tables
+  active="$(get_active_question_id)"
+  tables="$(count_user_tables)"
+
+  [[ "${tables}" != "0" ]] || die "No problem tables loaded. Run 'leetcode reset ${qid}' first."
+  [[ -n "${active}" && "${active}" == "${DATASET_ID}" ]] \
+    || die "Question ${DATASET_ID} is not active (active: ${active:-none}). Run 'leetcode reset ${qid}' first."
+
+  import_seed_sql
+  info "Seed applied for question ${DATASET_ID} (${DATASET_TITLE})."
 }
 
 cmd_status() {
@@ -143,7 +189,12 @@ cmd_validate() {
   if [[ $# -ge 1 ]]; then
     lookup_dataset "$1"
     [[ -s "${DATASET_SQL_PATH}" ]] || die "Dataset SQL file is empty: ${DATASET_SQL_PATH}"
-    info "Dataset ${DATASET_ID} (${DATASET_TITLE}): ok"
+    if [[ "${DATASET_HAS_SEED}" == "1" ]]; then
+      [[ -s "${DATASET_SEED_PATH}" ]] || die "Seed SQL file is empty: ${DATASET_SEED_PATH}"
+      info "Dataset ${DATASET_ID} (${DATASET_TITLE}): ok (setup + seed)"
+    else
+      info "Dataset ${DATASET_ID} (${DATASET_TITLE}): ok"
+    fi
   else
     local ids
     ids="$(jq -r '.datasets[].id' "${MANIFEST_PATH}")"
@@ -151,7 +202,9 @@ cmd_validate() {
       [[ -n "${id}" ]] || continue
       lookup_dataset "${id}"
       [[ -s "${DATASET_SQL_PATH}" ]] || die "Dataset SQL file is empty: ${DATASET_SQL_PATH}"
-      info "Dataset ${DATASET_ID} (${DATASET_TITLE}): ok"
+      if [[ "${DATASET_HAS_SEED}" == "1" ]]; then
+        [[ -s "${DATASET_SEED_PATH}" ]] || die "Seed SQL file is empty: ${DATASET_SEED_PATH}"
+      fi
     done <<< "${ids}"
     info "All manifest datasets validated."
   fi
@@ -176,16 +229,10 @@ main() {
       cmd_load "$@"
       ;;
     reset)
-      local qid="${1:-}"
-      local flag="${2:-}"
-      [[ -n "${qid}" ]] || die "Usage: leetcode reset <question_id> [--yes]"
-      if [[ "${2:-}" == "--yes" ]]; then
-        cmd_reset "${qid}" "--yes"
-      elif [[ "${1:-}" == "--yes" ]]; then
-        die "Usage: leetcode reset <question_id> [--yes]"
-      else
-        cmd_reset "${qid}" "${flag}"
-      fi
+      cmd_reset "$@"
+      ;;
+    seed)
+      cmd_seed "$@"
       ;;
     status)
       cmd_status "$@"

@@ -7,14 +7,40 @@
       "title": "Combine Two Tables",
       "directory": "0175-combine-two-tables",
       "file": "setup.sql",
+      "seed": "seed.sql",
       "difficulty": "Easy",
       "description": "Left join Person and Address tables."
+    },
+    {
+      "id": "176",
+      "title": "Second Highest Salary",
+      "directory": "0176-second-highest-salary",
+      "file": "setup.sql",
+      "difficulty": "Medium",
+      "description": "Find the second highest distinct salary from Employee."
+    },
+    {
+      "id": "177",
+      "title": "Nth Highest Salary",
+      "directory": "0177-nth-highest-salary",
+      "file": "setup.sql",
+      "difficulty": "Medium",
+      "description": "Return the Nth highest distinct salary from Employee."
+    },
+    {
+      "id": "178",
+      "title": "Rank Scores",
+      "directory": "0178-rank-scores",
+      "file": "setup.sql",
+      "difficulty": "Medium",
+      "description": "Rank scores with ties; consecutive ranks after duplicates."
     },
     {
       "id": "180",
       "title": "Consecutive Numbers",
       "directory": "0180-consecutive-numbers",
       "file": "setup.sql",
+      "seed": "seed.sql",
       "difficulty": "Medium",
       "description": "Find numbers that appear at least three times consecutively."
     },
@@ -23,6 +49,7 @@
       "title": "Employees Earning More Than Their Managers",
       "directory": "0181-employees-earning-more-than-managers",
       "file": "setup.sql",
+      "seed": "seed.sql",
       "difficulty": "Easy",
       "description": "Self-join on Employee salary vs manager salary."
     },
@@ -31,6 +58,7 @@
       "title": "Duplicate Emails",
       "directory": "0182-duplicate-emails",
       "file": "setup.sql",
+      "seed": "seed.sql",
       "difficulty": "Easy",
       "description": "Find emails that appear more than once."
     }

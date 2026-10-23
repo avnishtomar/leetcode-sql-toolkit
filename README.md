@@ -42,9 +42,10 @@ docker compose exec cli leetcode --help
 
 | Command | Description |
 |---------|-------------|
-| `list` | Show all datasets from `datasets/manifest.json` |
-| `load <id>` | Load a dataset if the practice DB is empty (or the same question is already active) |
-| `reset <id> [--yes]` | **Destructive:** drop user tables in `leetcode` and import the dataset |
+| `list` | Show datasets; `[seed]` marks questions with optional extra data |
+| `load <id>` | Import `setup.sql` only (empty DB) |
+| `reset <id> [--seed] [--yes]` | Drop user tables, import `setup.sql`, optionally `seed.sql` |
+| `seed <id>` | Append `seed.sql` for the **active** question (no reset) |
 | `status` | Engine, connection, active question |
 | `shell` | Interactive MySQL CLI in the container |
 | `validate [id]` | Check manifest and dataset files |
@@ -56,10 +57,27 @@ docker compose exec cli leetcode --help
 
 Active question metadata is stored in `_leetcode_toolkit_meta`.
 
+### Optional seed data
+
+Some questions include a second SQL file, `seed.sql`, with extra practice rows (MySQL only):
+
+```text
+datasets/0180-consecutive-numbers/setup.sql   # LeetCode sample data
+datasets/0180-consecutive-numbers/seed.sql    # additional rows
+```
+
+- `leetcode reset 180 --yes` — `setup.sql` only  
+- `leetcode reset 180 --seed --yes` — `setup.sql`, then `seed.sql`  
+- `leetcode seed 180` — run `seed.sql` on the current tables (question 180 must already be active)
+
+Running `seed` twice for the same loaded question is **blocked** (it would duplicate rows). Use `reset` to start over. `leetcode status` shows whether seed has been applied.
+
+Questions without a manifest `seed` entry do not support seeding.
+
 ## Example workflow
 
 ```bash
-docker compose exec cli leetcode reset 180 --yes
+docker compose exec cli leetcode reset 180 --seed --yes
 docker compose exec cli leetcode shell
 # or use phpMyAdmin at http://localhost:8080
 ```
@@ -84,7 +102,7 @@ tests/cli-tests.sh
 ## Adding a dataset
 
 1. Add `datasets/NNNN-slug/setup.sql` (MySQL).
-2. Register it in `datasets/manifest.json`.
+2. Optionally add `seed.sql` and a `"seed": "seed.sql"` field in `manifest.json`.
 3. `docker compose exec cli leetcode validate` and `leetcode reset NNNN --yes`.
 
 ## Testing

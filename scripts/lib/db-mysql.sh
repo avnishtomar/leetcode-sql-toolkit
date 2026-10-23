@@ -85,6 +85,26 @@ meta_set() {
     ON DUPLICATE KEY UPDATE meta_value = VALUES(meta_value);"
 }
 
+clear_seed_applied_flag() {
+  mysql_exec_db -e "DELETE FROM \`_leetcode_toolkit_meta\` WHERE meta_key = 'seed_applied';" 2>/dev/null || true
+}
+
+is_seed_applied() {
+  [[ "$(meta_get "seed_applied")" == "1" ]]
+}
+
+assert_seed_not_yet_applied() {
+  if is_seed_applied; then
+    local active
+    active="$(get_active_question_id)"
+    die "Seed data was already applied for question ${active}. Re-running seed would duplicate rows. Use 'leetcode reset ${active} --yes' to reload sample data only, or 'leetcode reset ${active} --seed --yes' to reload setup and seed from scratch."
+  fi
+}
+
+mark_seed_applied() {
+  meta_set "seed_applied" "1"
+}
+
 count_user_tables() {
   mysql_exec_db -e "
     SELECT COUNT(*)
@@ -165,6 +185,11 @@ database_state_summary() {
       echo "State:      question ${active_id} loaded (${active_title})"
     else
       echo "State:      tables present but no active question recorded in metadata"
+    fi
+    if is_seed_applied; then
+      echo "Seed:       applied (run reset to clear; duplicate seed is blocked)"
+    else
+      echo "Seed:       not applied"
     fi
     echo "Tables:     ${table_count} user table(s) in ${MYSQL_DATABASE}"
   fi

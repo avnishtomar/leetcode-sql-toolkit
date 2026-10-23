@@ -6,6 +6,30 @@ dataset_sql_file() {
   jq -r ".datasets[${idx}].file" "${MANIFEST_PATH}"
 }
 
+dataset_seed_file_name() {
+  local idx="$1"
+  jq -r ".datasets[${idx}].seed // empty" "${MANIFEST_PATH}"
+}
+
+dataset_has_seed_in_manifest() {
+  local idx="$1"
+  local seed
+  seed="$(dataset_seed_file_name "${idx}")"
+  [[ -n "${seed}" && "${seed}" != "null" ]]
+}
+
+resolve_dataset_paths() {
+  DATASET_SQL_PATH="${DATASETS_DIR}/${DATASET_DIR}/${DATASET_FILE}"
+  DATASET_SEED_FILE="$(echo "${DATASET_JSON}" | jq -r '.seed // empty')"
+  if [[ -n "${DATASET_SEED_FILE}" && "${DATASET_SEED_FILE}" != "null" ]]; then
+    DATASET_SEED_PATH="${DATASETS_DIR}/${DATASET_DIR}/${DATASET_SEED_FILE}"
+    DATASET_HAS_SEED=1
+  else
+    DATASET_SEED_PATH=""
+    DATASET_HAS_SEED=0
+  fi
+}
+
 validate_manifest() {
   [[ -f "${MANIFEST_PATH}" ]] || die "Manifest not found: ${MANIFEST_PATH}"
 
@@ -22,10 +46,11 @@ validate_manifest() {
 
   local i
   for ((i = 0; i < count; i++)); do
-    local id dir file path
+    local id dir file seed path seed_path
     id="$(jq -r ".datasets[${i}].id" "${MANIFEST_PATH}")"
     dir="$(jq -r ".datasets[${i}].directory" "${MANIFEST_PATH}")"
     file="$(dataset_sql_file "${i}")"
+    seed="$(dataset_seed_file_name "${i}")"
 
     [[ "${id}" =~ ^[0-9]+$ ]] || die "Invalid dataset id at index ${i}: ${id}"
     [[ "${dir}" != *".."* ]] || die "Manifest directory escapes datasets root: ${dir}"
@@ -33,6 +58,13 @@ validate_manifest() {
 
     path="${DATASETS_DIR}/${dir}/${file}"
     [[ -f "${path}" && -r "${path}" ]] || die "Dataset file missing for id ${id}: ${path}"
+
+    if [[ -n "${seed}" && "${seed}" != "null" ]]; then
+      [[ "${seed}" != *".."* && "${seed}" != /* ]] || die "Invalid seed path for id ${id}: ${seed}"
+      seed_path="${DATASETS_DIR}/${dir}/${seed}"
+      [[ -f "${seed_path}" && -r "${seed_path}" && -s "${seed_path}" ]] \
+        || die "Seed file missing or empty for id ${id}: ${seed_path}"
+    fi
   done
 }
 
@@ -51,13 +83,38 @@ lookup_dataset() {
   DATASET_TITLE="$(echo "${DATASET_JSON}" | jq -r '.title')"
   DATASET_DIR="$(echo "${DATASET_JSON}" | jq -r '.directory')"
   DATASET_FILE="$(echo "${DATASET_JSON}" | jq -r '.file')"
-  DATASET_SQL_PATH="${DATASETS_DIR}/${DATASET_DIR}/${DATASET_FILE}"
+  resolve_dataset_paths
+}
+
+require_seed_available() {
+  if [[ "${DATASET_HAS_SEED:-0}" != "1" ]]; then
+    die "Question ${DATASET_ID} does not have a seed dataset. No seed.sql is registered in the manifest."
+  fi
+  [[ -f "${DATASET_SEED_PATH}" && -r "${DATASET_SEED_PATH}" && -s "${DATASET_SEED_PATH}" ]] \
+    || die "Seed file missing or empty: ${DATASET_SEED_PATH}"
+}
+
+import_seed_sql() {
+  require_seed_available
+  assert_seed_not_yet_applied
+  info "Applying seed data from ${DATASET_SEED_FILE}..."
+  import_sql_file "${DATASET_SEED_PATH}"
+  mark_seed_applied
 }
 
 list_datasets() {
   validate_manifest
-  jq -r '.datasets | sort_by(.id | tonumber)[] | "\(.id)\t\(.title)"' "${MANIFEST_PATH}" \
-    | while IFS=$'\t' read -r id title; do
-        printf '%-5s %s\n' "${id}" "${title}"
-      done
+  local count i
+  count="$(jq '.datasets | length' "${MANIFEST_PATH}")"
+  for ((i = 0; i < count; i++)); do
+    local id title seed_flag
+    id="$(jq -r ".datasets[${i}].id" "${MANIFEST_PATH}")"
+    title="$(jq -r ".datasets[${i}].title" "${MANIFEST_PATH}")"
+    if dataset_has_seed_in_manifest "${i}"; then
+      seed_flag=" [seed]"
+    else
+      seed_flag=""
+    fi
+    printf '%-5s %s%s\n' "${id}" "${title}" "${seed_flag}"
+  done
 }
