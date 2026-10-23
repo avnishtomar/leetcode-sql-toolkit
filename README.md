@@ -4,8 +4,8 @@
 
 Stop creating tables and inserting sample data manually for every SQL problem. Import a dataset, open your SQL editor, and start solving problems.
 
-[![License](https://img.shields.io/github/license/YOUR_USERNAME/leetcode-sql-toolkit)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/YOUR_USERNAME/leetcode-sql-toolkit?style=social)](https://github.com/YOUR_USERNAME/leetcode-sql-toolkit/stargazers)
+[![License](https://img.shields.io/github/license/avnishtomar/leetcode-sql-toolkit)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/avnishtomar/leetcode-sql-toolkit?style=social)](https://github.com/avnishtomar/leetcode-sql-toolkit/stargazers)
 
 ## Why This Repository?
 
