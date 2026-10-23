@@ -1,0 +1,208 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [[ -d "${ROOT}/lib" ]]; then
+  # shellcheck source=lib/common.sh
+  source "${ROOT}/lib/common.sh"
+else
+  # shellcheck source=lib/common.sh
+  source "/usr/local/lib/leetcode/lib/common.sh"
+fi
+# shellcheck source=lib/config.sh
+source "${LIB_DIR}/config.sh"
+# shellcheck source=lib/manifest.sh
+source "${LIB_DIR}/manifest.sh"
+# shellcheck source=lib/db.sh
+source "${LIB_DIR}/db.sh"
+
+VERSION="1.0.0"
+
+usage() {
+  cat <<EOF
+leetcode-sql-toolkit — local SQL practice CLI
+
+Usage:
+  leetcode list
+  leetcode load <question_id>
+  leetcode reset <question_id> [--yes]
+  leetcode status
+  leetcode shell
+  leetcode validate [question_id]
+  leetcode version
+
+Database engine: MySQL (fixed default for this project).
+
+load   — Import a dataset only if the practice database is empty or the same question is already active.
+reset  — Replace all tables/data in the dedicated practice database, then load the selected dataset.
+         Prompts for confirmation unless --yes is passed.
+
+Examples:
+  leetcode list
+  leetcode load 180
+  leetcode reset 182 --yes
+  leetcode status
+  leetcode shell
+
+EOF
+  load_config
+  config_summary
+}
+
+cmd_list() {
+  load_config
+  list_datasets
+}
+
+cmd_load() {
+  local qid="${1:?question id required}"
+  load_config
+  validate_manifest
+  lookup_dataset "${qid}"
+  check_db_connection
+  acquire_operation_lock
+  trap release_operation_lock EXIT
+
+  ensure_meta_table
+  local active tables
+  active="$(get_active_question_id)"
+  tables="$(count_user_tables)"
+
+  if [[ "${tables}" != "0" ]]; then
+    if [[ -n "${active}" && "${active}" == "${DATASET_ID}" ]]; then
+      info "Question ${DATASET_ID} (${DATASET_TITLE}) is already loaded. Use 'leetcode reset ${DATASET_ID}' to reload from scratch."
+      exit 0
+    fi
+    if [[ -n "${active}" && "${active}" != "${DATASET_ID}" ]]; then
+      die "Practice database already contains question ${active}. Run 'leetcode reset ${qid}' to replace it."
+    fi
+    die "Practice database already has ${tables} table(s). Run 'leetcode reset ${qid}' to load this question."
+  fi
+
+  info "Loading question ${DATASET_ID}: ${DATASET_TITLE}..."
+  import_sql_file "${DATASET_SQL_PATH}"
+  meta_set "active_question_id" "${DATASET_ID}"
+  meta_set "active_question_title" "${DATASET_TITLE}"
+  info "Done. Active question: ${DATASET_ID} (${DATASET_TITLE})."
+}
+
+cmd_reset() {
+  local qid="${1:?question id required}"
+  local assume_yes="${2:-}"
+
+  load_config
+  validate_manifest
+  lookup_dataset "${qid}"
+  check_db_connection
+  assert_practice_database
+
+  if [[ "${assume_yes}" != "--yes" ]]; then
+    echo "This will DROP all tables and data in the '${LEETCODE_PRACTICE_DATABASE}' practice database"
+    echo "and load question ${DATASET_ID}: ${DATASET_TITLE}."
+    echo -n "Type 'yes' to continue: "
+    read -r confirm
+    [[ "${confirm}" == "yes" ]] || die "Reset cancelled."
+  fi
+
+  acquire_operation_lock
+  trap release_operation_lock EXIT
+
+  ensure_meta_table
+  info "Resetting practice database '${LEETCODE_PRACTICE_DATABASE}'..."
+  reset_database_objects
+  import_sql_file "${DATASET_SQL_PATH}"
+  meta_set "active_question_id" "${DATASET_ID}"
+  meta_set "active_question_title" "${DATASET_TITLE}"
+  info "Reset complete. Active question: ${DATASET_ID} (${DATASET_TITLE})."
+}
+
+cmd_status() {
+  load_config
+  config_summary
+  if try_db_connection; then
+    echo "Connection: ok"
+    ensure_meta_table
+    database_state_summary
+  else
+    echo "Connection: failed"
+    err "Check that the MySQL service is running and credentials in Compose/.env are correct."
+    exit 1
+  fi
+}
+
+cmd_shell() {
+  load_config
+  check_db_connection
+  info "Opening MySQL client for database '${MYSQL_DATABASE}'. Type exit or press Ctrl+D to quit."
+  open_sql_shell
+}
+
+cmd_validate() {
+  load_config
+  validate_manifest
+  if [[ $# -ge 1 ]]; then
+    lookup_dataset "$1"
+    [[ -s "${DATASET_SQL_PATH}" ]] || die "Dataset SQL file is empty: ${DATASET_SQL_PATH}"
+    info "Dataset ${DATASET_ID} (${DATASET_TITLE}): ok"
+  else
+    local ids
+    ids="$(jq -r '.datasets[].id' "${MANIFEST_PATH}")"
+    while IFS= read -r id; do
+      [[ -n "${id}" ]] || continue
+      lookup_dataset "${id}"
+      [[ -s "${DATASET_SQL_PATH}" ]] || die "Dataset SQL file is empty: ${DATASET_SQL_PATH}"
+      info "Dataset ${DATASET_ID} (${DATASET_TITLE}): ok"
+    done <<< "${ids}"
+    info "All manifest datasets validated."
+  fi
+}
+
+cmd_version() {
+  echo "leetcode-sql-toolkit ${VERSION}"
+}
+
+main() {
+  local cmd="${1:-}"
+  shift || true
+
+  case "${cmd}" in
+    -h|--help|help|"")
+      usage
+      ;;
+    list)
+      cmd_list "$@"
+      ;;
+    load)
+      cmd_load "$@"
+      ;;
+    reset)
+      local qid="${1:-}"
+      local flag="${2:-}"
+      [[ -n "${qid}" ]] || die "Usage: leetcode reset <question_id> [--yes]"
+      if [[ "${2:-}" == "--yes" ]]; then
+        cmd_reset "${qid}" "--yes"
+      elif [[ "${1:-}" == "--yes" ]]; then
+        die "Usage: leetcode reset <question_id> [--yes]"
+      else
+        cmd_reset "${qid}" "${flag}"
+      fi
+      ;;
+    status)
+      cmd_status "$@"
+      ;;
+    shell)
+      cmd_shell "$@"
+      ;;
+    validate)
+      cmd_validate "$@"
+      ;;
+    version)
+      cmd_version "$@"
+      ;;
+    *)
+      die "Unknown command: ${cmd}. Run 'leetcode --help'."
+      ;;
+  esac
+}
+
+main "$@"

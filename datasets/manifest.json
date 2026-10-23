@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "engine": "mysql",
+  "datasets": [
+    {
+      "id": "175",
+      "title": "Combine Two Tables",
+      "directory": "0175-combine-two-tables",
+      "file": "setup.sql",
+      "difficulty": "Easy",
+      "description": "Left join Person and Address tables."
+    },
+    {
+      "id": "180",
+      "title": "Consecutive Numbers",
+      "directory": "0180-consecutive-numbers",
+      "file": "setup.sql",
+      "difficulty": "Medium",
+      "description": "Find numbers that appear at least three times consecutively."
+    },
+    {
+      "id": "181",
+      "title": "Employees Earning More Than Their Managers",
+      "directory": "0181-employees-earning-more-than-managers",
+      "file": "setup.sql",
+      "difficulty": "Easy",
+      "description": "Self-join on Employee salary vs manager salary."
+    },
+    {
+      "id": "182",
+      "title": "Duplicate Emails",
+      "directory": "0182-duplicate-emails",
+      "file": "setup.sql",
+      "difficulty": "Easy",
+      "description": "Find emails that appear more than once."
+    }
+  ]
+}
