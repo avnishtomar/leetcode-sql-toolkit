@@ -110,7 +110,7 @@ fi
 
 assert_fails "duplicate seed rejected" "${CLI[@]}" seed 180
 
-assert_fails "seed rejected when question has no seed file" "${CLI[@]}" seed 176
+assert_fails "seed rejected when question is not active" "${CLI[@]}" seed 180
 
 assert_output_contains "list marks seed datasets" "[seed]" "${CLI[@]}" list
 

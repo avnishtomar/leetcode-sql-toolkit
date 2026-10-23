@@ -16,6 +16,7 @@
       "title": "Second Highest Salary",
       "directory": "0176-second-highest-salary",
       "file": "setup.sql",
+      "seed": "seed.sql",
       "difficulty": "Medium",
       "description": "Find the second highest distinct salary from Employee."
     },
@@ -24,6 +25,7 @@
       "title": "Nth Highest Salary",
       "directory": "0177-nth-highest-salary",
       "file": "setup.sql",
+      "seed": "seed.sql",
       "difficulty": "Medium",
       "description": "Return the Nth highest distinct salary from Employee."
     },
@@ -32,6 +34,7 @@
       "title": "Rank Scores",
       "directory": "0178-rank-scores",
       "file": "setup.sql",
+      "seed": "seed.sql",
       "difficulty": "Medium",
       "description": "Rank scores with ties; consecutive ranks after duplicates."
     },
@@ -61,6 +64,213 @@
       "seed": "seed.sql",
       "difficulty": "Easy",
       "description": "Find emails that appear more than once."
+    },
+    {
+      "id": "183",
+      "title": "Customers Who Never Order",
+      "directory": "0183-customers-who-never-order",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Find customers with no matching order."
+    },
+    {
+      "id": "184",
+      "title": "Department Highest Salary",
+      "directory": "0184-department-highest-salary",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Highest salary per department with employee names."
+    },
+    {
+      "id": "185",
+      "title": "Department Top Three Salaries",
+      "directory": "0185-department-top-three-salaries",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Top three distinct salaries per department."
+    },
+    {
+      "id": "196",
+      "title": "Delete Duplicate Emails",
+      "directory": "0196-delete-duplicate-emails",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Remove duplicate emails, keeping the row with the smallest id."
+    },
+    {
+      "id": "197",
+      "title": "Rising Temperature",
+      "directory": "0197-rising-temperature",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Find dates when temperature was higher than the previous day."
+    },
+    {
+      "id": "262",
+      "title": "Trips and Users",
+      "directory": "0262-trips-and-users",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Cancellation rate for unbanned users by month and city."
+    },
+    {
+      "id": "511",
+      "title": "Game Play Analysis I",
+      "directory": "0511-game-play-analysis-i",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "First login date for each player from Activity."
+    },
+    {
+      "id": "512",
+      "title": "Game Play Analysis II",
+      "directory": "0512-game-play-analysis-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Players who logged in on at least two consecutive days."
+    },
+    {
+      "id": "534",
+      "title": "Game Play Analysis III",
+      "directory": "0534-game-play-analysis-iii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Players whose every login day follows a login on the previous day."
+    },
+    {
+      "id": "550",
+      "title": "Game Play Analysis IV",
+      "directory": "0550-game-play-analysis-iv",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Fraction of players who logged in the day after their first login."
+    },
+    {
+      "id": "569",
+      "title": "Median Employee Salary",
+      "directory": "0569-median-employee-salary",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Median salary per company from Employee."
+    },
+    {
+      "id": "570",
+      "title": "Managers with at Least 5 Direct Reports",
+      "directory": "0570-managers-with-at-least-5-direct-reports",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Managers with five or more direct reports."
+    },
+    {
+      "id": "571",
+      "title": "Find Median Given Frequency of Numbers",
+      "directory": "0571-find-median-given-frequency-of-numbers",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Median of a multiset expanded from num and frequency."
+    },
+    {
+      "id": "574",
+      "title": "Winning Candidate",
+      "directory": "0574-winning-candidate",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Candidate with the most votes."
+    },
+    {
+      "id": "577",
+      "title": "Employee Bonus",
+      "directory": "0577-employee-bonus",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Employees with bonus under 1000, including those with no bonus row."
+    },
+    {
+      "id": "578",
+      "title": "Get Highest Answer Rate Question",
+      "directory": "0578-get-highest-answer-rate-question",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Question id with the highest answer rate from SurveyLog."
+    },
+    {
+      "id": "579",
+      "title": "Find Cumulative Salary of an Employee",
+      "directory": "0579-find-cumulative-salary-of-an-employee",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Three-month cumulative salary excluding the current month per employee."
+    },
+    {
+      "id": "580",
+      "title": "Count Student Number in Departments",
+      "directory": "0580-count-student-number-in-departments",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Student count per department, including departments with zero students."
+    },
+    {
+      "id": "584",
+      "title": "Find Customer Referee",
+      "directory": "0584-find-customer-referee",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Customers referred by someone other than referee 2."
+    },
+    {
+      "id": "586",
+      "title": "Customer Placing the Largest Number of Orders",
+      "directory": "0586-customer-placing-the-largest-number-of-orders",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Customer with the most orders in orders."
+    },
+    {
+      "id": "595",
+      "title": "Big Countries",
+      "directory": "0595-big-countries",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Countries with area or population above thresholds."
+    },
+    {
+      "id": "596",
+      "title": "Classes More Than 5 Students",
+      "directory": "0596-classes-more-than-5-students",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Classes with more than five students in Courses."
+    },
+    {
+      "id": "597",
+      "title": "Friend Requests I: Overall Acceptance Rate",
+      "directory": "0597-friend-requests-i-overall-acceptance-rate",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Overall friend request acceptance rate from FriendRequest and RequestAccepted."
     }
   ]
 }
