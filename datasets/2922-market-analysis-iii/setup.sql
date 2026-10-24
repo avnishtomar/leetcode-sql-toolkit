@@ -1,0 +1,17 @@
+-- LeetCode 2922 — Market Analysis III (practice fixture, MySQL 8.x)
+
+CREATE TABLE IF NOT EXISTS Users (seller_id int, join_date date, favorite_brand varchar(10)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Orders (order_id int, order_date date, item_id int, seller_id int) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Items (item_id int, item_brand varchar(10)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO Users (seller_id, join_date, favorite_brand) values ('1', '2019-01-01', 'Lenovo');
+INSERT INTO Users (seller_id, join_date, favorite_brand) values ('2', '2019-02-09', 'Samsung');
+INSERT INTO Users (seller_id, join_date, favorite_brand) values ('3', '2019-01-19', 'LG');
+INSERT INTO Orders (order_id, order_date, item_id, seller_id) values ('1', '2019-08-01', '4', '2');
+INSERT INTO Orders (order_id, order_date, item_id, seller_id) values ('2', '2019-08-02', '2', '3');
+INSERT INTO Orders (order_id, order_date, item_id, seller_id) values ('3', '2019-08-03', '3', '3');
+INSERT INTO Orders (order_id, order_date, item_id, seller_id) values ('4', '2019-08-04', '1', '2');
+INSERT INTO Orders (order_id, order_date, item_id, seller_id) values ('5', '2019-08-04', '4', '2');
+INSERT INTO Items (item_id, item_brand) values ('1', 'Samsung');
+INSERT INTO Items (item_id, item_brand) values ('2', 'Lenovo');
+INSERT INTO Items (item_id, item_brand) values ('3', 'LG');
+INSERT INTO Items (item_id, item_brand) values ('4', 'HP');

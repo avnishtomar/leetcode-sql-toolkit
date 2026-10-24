@@ -1927,6 +1927,303 @@
       "seed": "seed.sql",
       "difficulty": "Medium",
       "description": "LeetCode sample schema and data for Employees With Deductions."
+    },
+    {
+      "id": "2474",
+      "title": "Customers With Strictly Increasing Purchases",
+      "directory": "2474-customers-with-strictly-increasing-purchases",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Customers With Strictly Increasing Purchases."
+    },
+    {
+      "id": "2480",
+      "title": "Form a Chemical Bond",
+      "directory": "2480-form-a-chemical-bond",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Form a Chemical Bond."
+    },
+    {
+      "id": "2494",
+      "title": "Merge Overlapping Events in the Same Hall",
+      "directory": "2494-merge-overlapping-events-in-the-same-hall",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Merge Overlapping Events in the Same Hall."
+    },
+    {
+      "id": "2504",
+      "title": "Concatenate the Name and the Profession",
+      "directory": "2504-concatenate-the-name-and-the-profession",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Concatenate the Name and the Profession."
+    },
+    {
+      "id": "2668",
+      "title": "Find Latest Salaries",
+      "directory": "2668-find-latest-salaries",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Find Latest Salaries."
+    },
+    {
+      "id": "2669",
+      "title": "Count Artist Occurrences On Spotify Ranking List",
+      "directory": "2669-count-artist-occurrences-on-spotify-ranking-list",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Count Artist Occurrences On Spotify Ranking List."
+    },
+    {
+      "id": "2686",
+      "title": "Immediate Food Delivery III",
+      "directory": "2686-immediate-food-delivery-iii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Immediate Food Delivery III."
+    },
+    {
+      "id": "2687",
+      "title": "Bikes Last Time Used ",
+      "directory": "2687-bikes-last-time-used",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Bikes Last Time Used ."
+    },
+    {
+      "id": "2688",
+      "title": "Find Active Users",
+      "directory": "2688-find-active-users",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Active Users."
+    },
+    {
+      "id": "2701",
+      "title": "Consecutive Transactions with Increasing Amounts",
+      "directory": "2701-consecutive-transactions-with-increasing-amounts",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Consecutive Transactions with Increasing Amounts."
+    },
+    {
+      "id": "2720",
+      "title": "Popularity Percentage",
+      "directory": "2720-popularity-percentage",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Popularity Percentage."
+    },
+    {
+      "id": "2738",
+      "title": "Count Occurrences in Text",
+      "directory": "2738-count-occurrences-in-text",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Count Occurrences in Text."
+    },
+    {
+      "id": "2752",
+      "title": "Customers with Maximum Number of Transactions on Consecutive Days",
+      "directory": "2752-customers-with-maximum-number-of-transactions-on-consecutive-days",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Customers with Maximum Number of Transactions on Consecutive Days."
+    },
+    {
+      "id": "2783",
+      "title": "Flight Occupancy and Waitlist Analysis",
+      "directory": "2783-flight-occupancy-and-waitlist-analysis",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Flight Occupancy and Waitlist Analysis."
+    },
+    {
+      "id": "2793",
+      "title": "Status of Flight Tickets",
+      "directory": "2793-status-of-flight-tickets",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Status of Flight Tickets."
+    },
+    {
+      "id": "2820",
+      "title": "Election Results",
+      "directory": "2820-election-results",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Election Results."
+    },
+    {
+      "id": "2837",
+      "title": "Total Traveled Distance",
+      "directory": "2837-total-traveled-distance",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Total Traveled Distance."
+    },
+    {
+      "id": "2853",
+      "title": "Highest Salaries Difference",
+      "directory": "2853-highest-salaries-difference",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Highest Salaries Difference."
+    },
+    {
+      "id": "2854",
+      "title": "Rolling Average Steps",
+      "directory": "2854-rolling-average-steps",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Rolling Average Steps."
+    },
+    {
+      "id": "2893",
+      "title": "Calculate Orders Within Each Interval",
+      "directory": "2893-calculate-orders-within-each-interval",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Calculate Orders Within Each Interval."
+    },
+    {
+      "id": "2922",
+      "title": "Market Analysis III",
+      "directory": "2922-market-analysis-iii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Market Analysis III."
+    },
+    {
+      "id": "2978",
+      "title": "Symmetric Coordinates",
+      "directory": "2978-symmetric-coordinates",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Symmetric Coordinates."
+    },
+    {
+      "id": "2984",
+      "title": "Find Peak Calling Hours for Each City",
+      "directory": "2984-find-peak-calling-hours-for-each-city",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Peak Calling Hours for Each City."
+    },
+    {
+      "id": "2985",
+      "title": "Calculate Compressed Mean",
+      "directory": "2985-calculate-compressed-mean",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Calculate Compressed Mean."
+    },
+    {
+      "id": "2986",
+      "title": "Find Third Transaction",
+      "directory": "2986-find-third-transaction",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Third Transaction."
+    },
+    {
+      "id": "2987",
+      "title": "Find Expensive Cities",
+      "directory": "2987-find-expensive-cities",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Find Expensive Cities."
+    },
+    {
+      "id": "2988",
+      "title": "Manager of the Largest Department",
+      "directory": "2988-manager-of-the-largest-department",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Manager of the Largest Department."
+    },
+    {
+      "id": "2989",
+      "title": "Class Performance",
+      "directory": "2989-class-performance",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Class Performance."
+    },
+    {
+      "id": "2990",
+      "title": "Loan Types",
+      "directory": "2990-loan-types",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Loan Types."
+    },
+    {
+      "id": "2991",
+      "title": "Top Three Wineries ",
+      "directory": "2991-top-three-wineries",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Top Three Wineries ."
+    },
+    {
+      "id": "2993",
+      "title": "Friday Purchases I",
+      "directory": "2993-friday-purchases-i",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Friday Purchases I."
+    },
+    {
+      "id": "2994",
+      "title": "Friday Purchases II ",
+      "directory": "2994-friday-purchases-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Friday Purchases II ."
+    },
+    {
+      "id": "2995",
+      "title": "Viewers Turned Streamers",
+      "directory": "2995-viewers-turned-streamers",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Viewers Turned Streamers."
     }
   ]
 }
