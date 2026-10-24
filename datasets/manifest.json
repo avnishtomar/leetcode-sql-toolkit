@@ -2539,6 +2539,285 @@
       "seed": "seed.sql",
       "difficulty": "Medium",
       "description": "LeetCode sample schema and data for Calculate Product Final Price."
+    },
+    {
+      "id": "3308",
+      "title": "Find Top Performing Driver",
+      "directory": "3308-find-top-performing-driver",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Top Performing Driver."
+    },
+    {
+      "id": "3322",
+      "title": "Premier League Table Ranking III",
+      "directory": "3322-premier-league-table-ranking-iii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Premier League Table Ranking III."
+    },
+    {
+      "id": "3328",
+      "title": "Find Cities in Each State II",
+      "directory": "3328-find-cities-in-each-state-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Cities in Each State II."
+    },
+    {
+      "id": "3338",
+      "title": "Second Highest Salary II",
+      "directory": "3338-second-highest-salary-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Second Highest Salary II."
+    },
+    {
+      "id": "3358",
+      "title": "Books with NULL Ratings",
+      "directory": "3358-books-with-null-ratings",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Books with NULL Ratings."
+    },
+    {
+      "id": "3368",
+      "title": "First Letter Capitalization",
+      "directory": "3368-first-letter-capitalization",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for First Letter Capitalization."
+    },
+    {
+      "id": "3374",
+      "title": "First Letter Capitalization II",
+      "directory": "3374-first-letter-capitalization-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for First Letter Capitalization II."
+    },
+    {
+      "id": "3384",
+      "title": "Team Dominance by Pass Success",
+      "directory": "3384-team-dominance-by-pass-success",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Team Dominance by Pass Success."
+    },
+    {
+      "id": "3390",
+      "title": "Longest Team Pass Streak",
+      "directory": "3390-longest-team-pass-streak",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Longest Team Pass Streak."
+    },
+    {
+      "id": "3401",
+      "title": "Find Circular Gift Exchange Chains",
+      "directory": "3401-find-circular-gift-exchange-chains",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Find Circular Gift Exchange Chains."
+    },
+    {
+      "id": "3415",
+      "title": "Find Products with Three Consecutive Digits ",
+      "directory": "3415-find-products-with-three-consecutive-digits",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Find Products with Three Consecutive Digits ."
+    },
+    {
+      "id": "3421",
+      "title": "Find Students Who Improved",
+      "directory": "3421-find-students-who-improved",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Students Who Improved."
+    },
+    {
+      "id": "3436",
+      "title": "Find Valid Emails",
+      "directory": "3436-find-valid-emails",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Find Valid Emails."
+    },
+    {
+      "id": "3451",
+      "title": "Find Invalid IP Addresses",
+      "directory": "3451-find-invalid-ip-addresses",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Find Invalid IP Addresses."
+    },
+    {
+      "id": "3465",
+      "title": "Find Products with Valid Serial Numbers",
+      "directory": "3465-find-products-with-valid-serial-numbers",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Find Products with Valid Serial Numbers."
+    },
+    {
+      "id": "3475",
+      "title": "DNA Pattern Recognition ",
+      "directory": "3475-dna-pattern-recognition",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for DNA Pattern Recognition ."
+    },
+    {
+      "id": "3482",
+      "title": "Analyze Organization Hierarchy",
+      "directory": "3482-analyze-organization-hierarchy",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Analyze Organization Hierarchy."
+    },
+    {
+      "id": "3497",
+      "title": "Analyze Subscription Conversion ",
+      "directory": "3497-analyze-subscription-conversion",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Analyze Subscription Conversion ."
+    },
+    {
+      "id": "3521",
+      "title": "Find Product Recommendation Pairs",
+      "directory": "3521-find-product-recommendation-pairs",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Product Recommendation Pairs."
+    },
+    {
+      "id": "3554",
+      "title": "Find Category Recommendation Pairs",
+      "directory": "3554-find-category-recommendation-pairs",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Find Category Recommendation Pairs."
+    },
+    {
+      "id": "3564",
+      "title": "Seasonal Sales Analysis",
+      "directory": "3564-seasonal-sales-analysis",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Seasonal Sales Analysis."
+    },
+    {
+      "id": "3570",
+      "title": "Find Books with No Available Copies",
+      "directory": "3570-find-books-with-no-available-copies",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Find Books with No Available Copies."
+    },
+    {
+      "id": "3580",
+      "title": "Find Consistently Improving Employees",
+      "directory": "3580-find-consistently-improving-employees",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Consistently Improving Employees."
+    },
+    {
+      "id": "3586",
+      "title": "Find COVID Recovery Patients",
+      "directory": "3586-find-covid-recovery-patients",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find COVID Recovery Patients."
+    },
+    {
+      "id": "3601",
+      "title": "Find Drivers with Improved Fuel Efficiency",
+      "directory": "3601-find-drivers-with-improved-fuel-efficiency",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Drivers with Improved Fuel Efficiency."
+    },
+    {
+      "id": "3611",
+      "title": "Find Overbooked Employees",
+      "directory": "3611-find-overbooked-employees",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Overbooked Employees."
+    },
+    {
+      "id": "3617",
+      "title": "Find Students with Study Spiral Pattern",
+      "directory": "3617-find-students-with-study-spiral-pattern",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Find Students with Study Spiral Pattern."
+    },
+    {
+      "id": "3626",
+      "title": "Find Stores with Inventory Imbalance",
+      "directory": "3626-find-stores-with-inventory-imbalance",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Stores with Inventory Imbalance."
+    },
+    {
+      "id": "3642",
+      "title": "Find Books with Polarized Opinions",
+      "directory": "3642-find-books-with-polarized-opinions",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Books with Polarized Opinions."
+    },
+    {
+      "id": "3657",
+      "title": "Find Loyal Customers",
+      "directory": "3657-find-loyal-customers",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Loyal Customers."
+    },
+    {
+      "id": "3673",
+      "title": "Find Zombie Sessions",
+      "directory": "3673-find-zombie-sessions",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Find Zombie Sessions."
     }
   ]
 }
