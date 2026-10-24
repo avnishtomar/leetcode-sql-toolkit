@@ -2818,6 +2818,60 @@
       "seed": "seed.sql",
       "difficulty": "Hard",
       "description": "LeetCode sample schema and data for Find Zombie Sessions."
+    },
+    {
+      "id": "3705",
+      "title": "Find Golden Hour Customers",
+      "directory": "3705-find-golden-hour-customers",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Golden Hour Customers."
+    },
+    {
+      "id": "3716",
+      "title": "Find Churn Risk Customers",
+      "directory": "3716-find-churn-risk-customers",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Churn Risk Customers."
+    },
+    {
+      "id": "3764",
+      "title": "Most Common Course Pairs",
+      "directory": "3764-most-common-course-pairs",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Most Common Course Pairs."
+    },
+    {
+      "id": "3793",
+      "title": "Find Users with High Token Usage",
+      "directory": "3793-find-users-with-high-token-usage",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Find Users with High Token Usage."
+    },
+    {
+      "id": "3808",
+      "title": "Find Emotionally Consistent Users",
+      "directory": "3808-find-emotionally-consistent-users",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Emotionally Consistent Users."
+    },
+    {
+      "id": "3832",
+      "title": "Find Users with Persistent Behavior Patterns",
+      "directory": "3832-find-users-with-persistent-behavior-patterns",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Find Users with Persistent Behavior Patterns."
     }
   ]
 }
