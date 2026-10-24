@@ -919,6 +919,348 @@
       "seed": "seed.sql",
       "difficulty": "Medium",
       "description": "Customers who ordered A and B but never C."
+    },
+    {
+      "id": "1407",
+      "title": "Top Travellers",
+      "directory": "1407-top-travellers",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Total travel distance per user from Users and Rides."
+    },
+    {
+      "id": "1412",
+      "title": "Find the Quiet Students in All Exams",
+      "directory": "1412-find-the-quiet-students-in-all-exams",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Students who never scored above the exam average."
+    },
+    {
+      "id": "1421",
+      "title": "NPV Queries",
+      "directory": "1421-npv-queries",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Sum NPV values for each query id and year."
+    },
+    {
+      "id": "1435",
+      "title": "Create a Session Bar Chart",
+      "directory": "1435-create-a-session-bar-chart",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Count sessions by duration bucket in Sessions."
+    },
+    {
+      "id": "1440",
+      "title": "Evaluate Boolean Expression",
+      "directory": "1440-evaluate-boolean-expression",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Evaluate comparison expressions using Variables."
+    },
+    {
+      "id": "1445",
+      "title": "Apples & Oranges",
+      "directory": "1445-apples-oranges",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Daily difference between apples and oranges sold."
+    },
+    {
+      "id": "1454",
+      "title": "Active Users",
+      "directory": "1454-active-users",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Accounts with at least five distinct login days in a window."
+    },
+    {
+      "id": "1459",
+      "title": "Rectangles Area",
+      "directory": "1459-rectangles-area",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Area of axis-aligned rectangles from diagonal Points."
+    },
+    {
+      "id": "1468",
+      "title": "Calculate Salaries",
+      "directory": "1468-calculate-salaries",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Median salary and missing salary rows per company."
+    },
+    {
+      "id": "1479",
+      "title": "Sales by Day of the Week",
+      "directory": "1479-sales-by-day-of-the-week",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Average quantity sold per item by weekday."
+    },
+    {
+      "id": "1484",
+      "title": "Group Sold Products By The Date",
+      "directory": "1484-group-sold-products-by-the-date",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Distinct products sold per date from Activities."
+    },
+    {
+      "id": "1495",
+      "title": "Friendly Movies Streamed Last Month",
+      "directory": "1495-friendly-movies-streamed-last-month",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Distinct kid-friendly movies streamed in the prior month."
+    },
+    {
+      "id": "1501",
+      "title": "Countries You Can Safely Invest In",
+      "directory": "1501-countries-you-can-safely-invest-in",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Countries whose average call duration exceeds the global average."
+    },
+    {
+      "id": "1511",
+      "title": "Customer Order Frequency",
+      "directory": "1511-customer-order-frequency",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Customers spending at least $100 in both June and July 2020."
+    },
+    {
+      "id": "1517",
+      "title": "Find Users With Valid E-Mails",
+      "directory": "1517-find-users-with-valid-e-mails",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Users whose mail matches the @leetcode.com prefix rules."
+    },
+    {
+      "id": "1527",
+      "title": "Patients With a Condition",
+      "directory": "1527-patients-with-a-condition",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Patients with a condition code starting with DIAB1."
+    },
+    {
+      "id": "1532",
+      "title": "The Most Recent Three Orders",
+      "directory": "1532-the-most-recent-three-orders",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Up to three most recent orders per customer."
+    },
+    {
+      "id": "1543",
+      "title": "Fix Product Name Format",
+      "directory": "1543-fix-product-name-format",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Monthly sales counts with normalized product names."
+    },
+    {
+      "id": "1549",
+      "title": "The Most Recent Orders for Each Product",
+      "directory": "1549-the-most-recent-orders-for-each-product",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Latest order row(s) for each product."
+    },
+    {
+      "id": "1555",
+      "title": "Bank Account Summary",
+      "directory": "1555-bank-account-summary",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "User balances after transfers and credit limit breach flag."
+    },
+    {
+      "id": "1565",
+      "title": "Unique Orders and Customers Per Month",
+      "directory": "1565-unique-orders-and-customers-per-month",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Monthly order and customer counts for invoices over $20."
+    },
+    {
+      "id": "1571",
+      "title": "Warehouse Manager",
+      "directory": "1571-warehouse-manager",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Total cubic feet of inventory per warehouse."
+    },
+    {
+      "id": "1581",
+      "title": "Customer Who Visited but Did Not Make Any Transactions",
+      "directory": "1581-customer-who-visited-but-did-not-make-any-transactions",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Visit counts with no matching transaction per customer."
+    },
+    {
+      "id": "1587",
+      "title": "Bank Account Summary II",
+      "directory": "1587-bank-account-summary-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Account names and balances over 10000."
+    },
+    {
+      "id": "1596",
+      "title": "The Most Frequently Ordered Products for Each Customer",
+      "directory": "1596-the-most-frequently-ordered-products-for-each-customer",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Most often ordered product(s) per customer."
+    },
+    {
+      "id": "1607",
+      "title": "Sellers With No Sales",
+      "directory": "1607-sellers-with-no-sales",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Sellers With No Sales."
+    },
+    {
+      "id": "1613",
+      "title": "Find the Missing IDs",
+      "directory": "1613-find-the-missing-ids",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find the Missing IDs."
+    },
+    {
+      "id": "1623",
+      "title": "All Valid Triplets That Can Represent a Country",
+      "directory": "1623-all-valid-triplets-that-can-represent-a-country",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for All Valid Triplets That Can Represent a Country."
+    },
+    {
+      "id": "1633",
+      "title": "Percentage of Users Attended a Contest",
+      "directory": "1633-percentage-of-users-attended-a-contest",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Percentage of Users Attended a Contest."
+    },
+    {
+      "id": "1635",
+      "title": "Hopper Company Queries I",
+      "directory": "1635-hopper-company-queries-i",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Hopper Company Queries I."
+    },
+    {
+      "id": "1645",
+      "title": "Hopper Company Queries II",
+      "directory": "1645-hopper-company-queries-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Hopper Company Queries II."
+    },
+    {
+      "id": "1651",
+      "title": "Hopper Company Queries III",
+      "directory": "1651-hopper-company-queries-iii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Hopper Company Queries III."
+    },
+    {
+      "id": "1661",
+      "title": "Average Time of Process per Machine",
+      "directory": "1661-average-time-of-process-per-machine",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Average Time of Process per Machine."
+    },
+    {
+      "id": "1667",
+      "title": "Fix Names in a Table",
+      "directory": "1667-fix-names-in-a-table",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Fix Names in a Table."
+    },
+    {
+      "id": "1677",
+      "title": "Product's Worth Over Invoices",
+      "directory": "1677-products-worth-over-invoices",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Product's Worth Over Invoices."
+    },
+    {
+      "id": "1683",
+      "title": "Invalid Tweets",
+      "directory": "1683-invalid-tweets",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Invalid Tweets."
+    },
+    {
+      "id": "1693",
+      "title": "Daily Leads and Partners",
+      "directory": "1693-daily-leads-and-partners",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Daily Leads and Partners."
+    },
+    {
+      "id": "1699",
+      "title": "Number of Calls Between Two Persons",
+      "directory": "1699-number-of-calls-between-two-persons",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Number of Calls Between Two Persons."
     }
   ]
 }

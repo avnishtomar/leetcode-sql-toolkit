@@ -1,0 +1,23 @@
+-- LeetCode 1596 — The Most Frequently Ordered Products for Each Customer (practice fixture, MySQL 8.x)
+CREATE TABLE IF NOT EXISTS Customers (customer_id int, name varchar(20)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Orders (order_id int, order_date date, customer_id int, product_id int) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Products (product_id int, product_name varchar(20), price int) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO Customers (customer_id, name) values ('1', 'Alice');
+INSERT INTO Customers (customer_id, name) values ('2', 'Bob');
+INSERT INTO Customers (customer_id, name) values ('3', 'Tom');
+INSERT INTO Customers (customer_id, name) values ('4', 'Jerry');
+INSERT INTO Customers (customer_id, name) values ('5', 'John');
+INSERT INTO Orders (order_id, order_date, customer_id, product_id) values ('1', '2020-07-31', '1', '1');
+INSERT INTO Orders (order_id, order_date, customer_id, product_id) values ('2', '2020-07-30', '2', '2');
+INSERT INTO Orders (order_id, order_date, customer_id, product_id) values ('3', '2020-08-29', '3', '3');
+INSERT INTO Orders (order_id, order_date, customer_id, product_id) values ('4', '2020-07-29', '4', '1');
+INSERT INTO Orders (order_id, order_date, customer_id, product_id) values ('5', '2020-06-10', '1', '2');
+INSERT INTO Orders (order_id, order_date, customer_id, product_id) values ('6', '2020-08-01', '2', '1');
+INSERT INTO Orders (order_id, order_date, customer_id, product_id) values ('7', '2020-08-01', '3', '3');
+INSERT INTO Orders (order_id, order_date, customer_id, product_id) values ('8', '2020-08-03', '1', '2');
+INSERT INTO Orders (order_id, order_date, customer_id, product_id) values ('9', '2020-08-07', '2', '3');
+INSERT INTO Orders (order_id, order_date, customer_id, product_id) values ('10', '2020-07-15', '1', '2');
+INSERT INTO Products (product_id, product_name, price) values ('1', 'keyboard', '120');
+INSERT INTO Products (product_id, product_name, price) values ('2', 'mouse', '80');
+INSERT INTO Products (product_id, product_name, price) values ('3', 'screen', '600');
+INSERT INTO Products (product_id, product_name, price) values ('4', 'hard disk', '450');

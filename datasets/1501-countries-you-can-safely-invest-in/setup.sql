@@ -1,0 +1,25 @@
+-- LeetCode 1501 — Countries You Can Safely Invest In (practice fixture, MySQL 8.x)
+CREATE TABLE IF NOT EXISTS Person (id int, name varchar(15), phone_number varchar(11)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Country (name varchar(15), country_code varchar(3)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Calls (caller_id int, callee_id int, duration int) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO Person (id, name, phone_number) values ('3', 'Jonathan', '051-1234567');
+INSERT INTO Person (id, name, phone_number) values ('12', 'Elvis', '051-7654321');
+INSERT INTO Person (id, name, phone_number) values ('1', 'Moncef', '212-1234567');
+INSERT INTO Person (id, name, phone_number) values ('2', 'Maroua', '212-6523651');
+INSERT INTO Person (id, name, phone_number) values ('7', 'Meir', '972-1234567');
+INSERT INTO Person (id, name, phone_number) values ('9', 'Rachel', '972-0011100');
+INSERT INTO Country (name, country_code) values ('Peru', '051');
+INSERT INTO Country (name, country_code) values ('Israel', '972');
+INSERT INTO Country (name, country_code) values ('Morocco', '212');
+INSERT INTO Country (name, country_code) values ('Germany', '049');
+INSERT INTO Country (name, country_code) values ('Ethiopia', '251');
+INSERT INTO Calls (caller_id, callee_id, duration) values ('1', '9', '33');
+INSERT INTO Calls (caller_id, callee_id, duration) values ('2', '9', '4');
+INSERT INTO Calls (caller_id, callee_id, duration) values ('1', '2', '59');
+INSERT INTO Calls (caller_id, callee_id, duration) values ('3', '12', '102');
+INSERT INTO Calls (caller_id, callee_id, duration) values ('3', '12', '330');
+INSERT INTO Calls (caller_id, callee_id, duration) values ('12', '3', '5');
+INSERT INTO Calls (caller_id, callee_id, duration) values ('7', '9', '13');
+INSERT INTO Calls (caller_id, callee_id, duration) values ('7', '1', '3');
+INSERT INTO Calls (caller_id, callee_id, duration) values ('9', '7', '1');
+INSERT INTO Calls (caller_id, callee_id, duration) values ('1', '7', '7');
