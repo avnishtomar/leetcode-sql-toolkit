@@ -1603,6 +1603,330 @@
       "seed": "seed.sql",
       "difficulty": "Hard",
       "description": "Hired candidate ids under $70000 budget (seniors first)."
+    },
+    {
+      "id": "2020",
+      "title": "Number of Accounts That Did Not Stream",
+      "directory": "2020-number-of-accounts-that-did-not-stream",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Number of Accounts That Did Not Stream."
+    },
+    {
+      "id": "2026",
+      "title": "Low-Quality Problems",
+      "directory": "2026-low-quality-problems",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Low-Quality Problems."
+    },
+    {
+      "id": "2041",
+      "title": "Accepted Candidates From the Interviews",
+      "directory": "2041-accepted-candidates-from-the-interviews",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Accepted Candidates From the Interviews."
+    },
+    {
+      "id": "2051",
+      "title": "The Category of Each Member in the Store",
+      "directory": "2051-the-category-of-each-member-in-the-store",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for The Category of Each Member in the Store."
+    },
+    {
+      "id": "2066",
+      "title": "Account Balance",
+      "directory": "2066-account-balance",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Account Balance."
+    },
+    {
+      "id": "2072",
+      "title": "The Winner University",
+      "directory": "2072-the-winner-university",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for The Winner University."
+    },
+    {
+      "id": "2082",
+      "title": "The Number of Rich Customers",
+      "directory": "2082-the-number-of-rich-customers",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for The Number of Rich Customers."
+    },
+    {
+      "id": "2084",
+      "title": "Drop Type 1 Orders for Customers With Type 0 Orders",
+      "directory": "2084-drop-type-1-orders-for-customers-with-type-0-orders",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Drop Type 1 Orders for Customers With Type 0 Orders."
+    },
+    {
+      "id": "2112",
+      "title": "The Airport With the Most Traffic",
+      "directory": "2112-the-airport-with-the-most-traffic",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for The Airport With the Most Traffic."
+    },
+    {
+      "id": "2118",
+      "title": "Build the Equation",
+      "directory": "2118-build-the-equation",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Build the Equation."
+    },
+    {
+      "id": "2142",
+      "title": "The Number of Passengers in Each Bus I",
+      "directory": "2142-the-number-of-passengers-in-each-bus-i",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for The Number of Passengers in Each Bus I."
+    },
+    {
+      "id": "2153",
+      "title": "The Number of Passengers in Each Bus II",
+      "directory": "2153-the-number-of-passengers-in-each-bus-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for The Number of Passengers in Each Bus II."
+    },
+    {
+      "id": "2159",
+      "title": "Order Two Columns Independently",
+      "directory": "2159-order-two-columns-independently",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Order Two Columns Independently."
+    },
+    {
+      "id": "2173",
+      "title": "Longest Winning Streak",
+      "directory": "2173-longest-winning-streak",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Longest Winning Streak."
+    },
+    {
+      "id": "2175",
+      "title": "The Change in Global Rankings",
+      "directory": "2175-the-change-in-global-rankings",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for The Change in Global Rankings."
+    },
+    {
+      "id": "2199",
+      "title": "Finding the Topic of Each Post",
+      "directory": "2199-finding-the-topic-of-each-post",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Finding the Topic of Each Post."
+    },
+    {
+      "id": "2205",
+      "title": "The Number of Users That Are Eligible for Discount",
+      "directory": "2205-the-number-of-users-that-are-eligible-for-discount",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for The Number of Users That Are Eligible for Discount."
+    },
+    {
+      "id": "2228",
+      "title": "Users With Two Purchases Within Seven Days",
+      "directory": "2228-users-with-two-purchases-within-seven-days",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Users With Two Purchases Within Seven Days."
+    },
+    {
+      "id": "2230",
+      "title": "The Users That Are Eligible for Discount",
+      "directory": "2230-the-users-that-are-eligible-for-discount",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for The Users That Are Eligible for Discount."
+    },
+    {
+      "id": "2238",
+      "title": "Number of Times a Driver Was a Passenger",
+      "directory": "2238-number-of-times-a-driver-was-a-passenger",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Number of Times a Driver Was a Passenger."
+    },
+    {
+      "id": "2252",
+      "title": "Dynamic Pivoting of a Table",
+      "directory": "2252-dynamic-pivoting-of-a-table",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Dynamic Pivoting of a Table."
+    },
+    {
+      "id": "2253",
+      "title": "Dynamic Unpivoting of a Table",
+      "directory": "2253-dynamic-unpivoting-of-a-table",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Dynamic Unpivoting of a Table."
+    },
+    {
+      "id": "2292",
+      "title": "Products With Three or More Orders in Two Consecutive Years",
+      "directory": "2292-products-with-three-or-more-orders-in-two-consecutive-years",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Products With Three or More Orders in Two Consecutive Years."
+    },
+    {
+      "id": "2298",
+      "title": "Tasks Count in the Weekend",
+      "directory": "2298-tasks-count-in-the-weekend",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Tasks Count in the Weekend."
+    },
+    {
+      "id": "2308",
+      "title": "Arrange Table by Gender",
+      "directory": "2308-arrange-table-by-gender",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Arrange Table by Gender."
+    },
+    {
+      "id": "2314",
+      "title": "The First Day of the Maximum Recorded Degree in Each City",
+      "directory": "2314-the-first-day-of-the-maximum-recorded-degree-in-each-city",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for The First Day of the Maximum Recorded Degree in Each City."
+    },
+    {
+      "id": "2324",
+      "title": "Product Sales Analysis IV",
+      "directory": "2324-product-sales-analysis-iv",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Product Sales Analysis IV."
+    },
+    {
+      "id": "2329",
+      "title": "Product Sales Analysis V",
+      "directory": "2329-product-sales-analysis-v",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Product Sales Analysis V."
+    },
+    {
+      "id": "2339",
+      "title": "All the Matches of the League",
+      "directory": "2339-all-the-matches-of-the-league",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for All the Matches of the League."
+    },
+    {
+      "id": "2346",
+      "title": "Compute the Rank as a Percentage",
+      "directory": "2346-compute-the-rank-as-a-percentage",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Compute the Rank as a Percentage."
+    },
+    {
+      "id": "2356",
+      "title": "Number of Unique Subjects Taught by Each Teacher",
+      "directory": "2356-number-of-unique-subjects-taught-by-each-teacher",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Number of Unique Subjects Taught by Each Teacher."
+    },
+    {
+      "id": "2362",
+      "title": "Generate the Invoice",
+      "directory": "2362-generate-the-invoice",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Generate the Invoice."
+    },
+    {
+      "id": "2372",
+      "title": "Calculate the Influence of Each Salesperson",
+      "directory": "2372-calculate-the-influence-of-each-salesperson",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Calculate the Influence of Each Salesperson."
+    },
+    {
+      "id": "2377",
+      "title": "Sort the Olympic Table",
+      "directory": "2377-sort-the-olympic-table",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Sort the Olympic Table."
+    },
+    {
+      "id": "2388",
+      "title": "Change Null Values in a Table to the Previous Value",
+      "directory": "2388-change-null-values-in-a-table-to-the-previous-value",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Change Null Values in a Table to the Previous Value."
+    },
+    {
+      "id": "2394",
+      "title": "Employees With Deductions",
+      "directory": "2394-employees-with-deductions",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Employees With Deductions."
     }
   ]
 }
