@@ -1,0 +1,26 @@
+-- LeetCode 1294 — Weather Type in Each Country (practice fixture, MySQL 8.x)
+CREATE TABLE IF NOT EXISTS Countries (country_id int, country_name varchar(20)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Weather (country_id int, weather_state int, day date) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO Countries (country_id, country_name) values ('2', 'USA');
+INSERT INTO Countries (country_id, country_name) values ('3', 'Australia');
+INSERT INTO Countries (country_id, country_name) values ('7', 'Peru');
+INSERT INTO Countries (country_id, country_name) values ('5', 'China');
+INSERT INTO Countries (country_id, country_name) values ('8', 'Morocco');
+INSERT INTO Countries (country_id, country_name) values ('9', 'Spain');
+INSERT INTO Weather (country_id, weather_state, day) values ('2', '15', '2019-11-01');
+INSERT INTO Weather (country_id, weather_state, day) values ('2', '12', '2019-10-28');
+INSERT INTO Weather (country_id, weather_state, day) values ('2', '12', '2019-10-27');
+INSERT INTO Weather (country_id, weather_state, day) values ('3', '-2', '2019-11-10');
+INSERT INTO Weather (country_id, weather_state, day) values ('3', '0', '2019-11-11');
+INSERT INTO Weather (country_id, weather_state, day) values ('3', '3', '2019-11-12');
+INSERT INTO Weather (country_id, weather_state, day) values ('5', '16', '2019-11-07');
+INSERT INTO Weather (country_id, weather_state, day) values ('5', '18', '2019-11-09');
+INSERT INTO Weather (country_id, weather_state, day) values ('5', '21', '2019-11-23');
+INSERT INTO Weather (country_id, weather_state, day) values ('7', '25', '2019-11-28');
+INSERT INTO Weather (country_id, weather_state, day) values ('7', '22', '2019-12-01');
+INSERT INTO Weather (country_id, weather_state, day) values ('7', '20', '2019-12-02');
+INSERT INTO Weather (country_id, weather_state, day) values ('8', '25', '2019-11-05');
+INSERT INTO Weather (country_id, weather_state, day) values ('8', '27', '2019-11-15');
+INSERT INTO Weather (country_id, weather_state, day) values ('8', '31', '2019-11-25');
+INSERT INTO Weather (country_id, weather_state, day) values ('9', '7', '2019-10-23');
+INSERT INTO Weather (country_id, weather_state, day) values ('9', '3', '2019-12-23');

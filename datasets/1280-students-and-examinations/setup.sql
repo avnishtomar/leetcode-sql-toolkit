@@ -1,0 +1,22 @@
+-- LeetCode 1280 — Students and Examinations (practice fixture, MySQL 8.x)
+CREATE TABLE IF NOT EXISTS Students (student_id int, student_name varchar(20)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Subjects (subject_name varchar(20)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Examinations (student_id int, subject_name varchar(20)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO Students (student_id, student_name) values ('1', 'Alice');
+INSERT INTO Students (student_id, student_name) values ('2', 'Bob');
+INSERT INTO Students (student_id, student_name) values ('13', 'John');
+INSERT INTO Students (student_id, student_name) values ('6', 'Alex');
+INSERT INTO Subjects (subject_name) values ('Math');
+INSERT INTO Subjects (subject_name) values ('Physics');
+INSERT INTO Subjects (subject_name) values ('Programming');
+INSERT INTO Examinations (student_id, subject_name) values ('1', 'Math');
+INSERT INTO Examinations (student_id, subject_name) values ('1', 'Physics');
+INSERT INTO Examinations (student_id, subject_name) values ('1', 'Programming');
+INSERT INTO Examinations (student_id, subject_name) values ('2', 'Programming');
+INSERT INTO Examinations (student_id, subject_name) values ('1', 'Physics');
+INSERT INTO Examinations (student_id, subject_name) values ('1', 'Math');
+INSERT INTO Examinations (student_id, subject_name) values ('13', 'Math');
+INSERT INTO Examinations (student_id, subject_name) values ('13', 'Programming');
+INSERT INTO Examinations (student_id, subject_name) values ('13', 'Physics');
+INSERT INTO Examinations (student_id, subject_name) values ('2', 'Math');
+INSERT INTO Examinations (student_id, subject_name) values ('1', 'Math');

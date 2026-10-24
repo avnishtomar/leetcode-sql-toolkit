@@ -1,0 +1,11 @@
+-- LeetCode 1251 — Average Selling Price (practice fixture, MySQL 8.x)
+CREATE TABLE IF NOT EXISTS Prices (product_id int, start_date date, end_date date, price int) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS UnitsSold (product_id int, purchase_date date, units int) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO Prices (product_id, start_date, end_date, price) values ('1', '2019-02-17', '2019-02-28', '5');
+INSERT INTO Prices (product_id, start_date, end_date, price) values ('1', '2019-03-01', '2019-03-22', '20');
+INSERT INTO Prices (product_id, start_date, end_date, price) values ('2', '2019-02-01', '2019-02-20', '15');
+INSERT INTO Prices (product_id, start_date, end_date, price) values ('2', '2019-02-21', '2019-03-31', '30');
+INSERT INTO UnitsSold (product_id, purchase_date, units) values ('1', '2019-02-25', '100');
+INSERT INTO UnitsSold (product_id, purchase_date, units) values ('1', '2019-03-01', '15');
+INSERT INTO UnitsSold (product_id, purchase_date, units) values ('2', '2019-02-10', '200');
+INSERT INTO UnitsSold (product_id, purchase_date, units) values ('2', '2019-03-22', '30');

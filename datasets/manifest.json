@@ -676,6 +676,114 @@
       "seed": "seed.sql",
       "difficulty": "Hard",
       "description": "Group winners by total match points in Matches and Players."
+    },
+    {
+      "id": "1204",
+      "title": "Last Person to Fit in the Bus",
+      "directory": "1204-last-person-to-fit-in-the-bus",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Last passenger who fits before the bus exceeds 1000 kg."
+    },
+    {
+      "id": "1205",
+      "title": "Monthly Transactions II",
+      "directory": "1205-monthly-transactions-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Chargebacks and net totals by month and country."
+    },
+    {
+      "id": "1211",
+      "title": "Queries Quality and Percentage",
+      "directory": "1211-queries-quality-and-percentage",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Average quality and poor-query percentage per query name."
+    },
+    {
+      "id": "1212",
+      "title": "Team Scores in Football Tournament",
+      "directory": "1212-team-scores-in-football-tournament",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Team points from wins, draws, and losses in Matches."
+    },
+    {
+      "id": "1225",
+      "title": "Report Contiguous Dates",
+      "directory": "1225-report-contiguous-dates",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Longest streaks of failed and succeeded dates."
+    },
+    {
+      "id": "1241",
+      "title": "Number of Comments per Post",
+      "directory": "1241-number-of-comments-per-post",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Comment count per post from Submissions parent links."
+    },
+    {
+      "id": "1251",
+      "title": "Average Selling Price",
+      "directory": "1251-average-selling-price",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Average selling price per product from Prices and UnitsSold."
+    },
+    {
+      "id": "1264",
+      "title": "Page Recommendations",
+      "directory": "1264-page-recommendations",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Page recommendations from Friendship and Likes."
+    },
+    {
+      "id": "1270",
+      "title": "All People Report to the Given Manager",
+      "directory": "1270-all-people-report-to-the-given-manager",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Employees reporting to the CEO within three management levels."
+    },
+    {
+      "id": "1280",
+      "title": "Students and Examinations",
+      "directory": "1280-students-and-examinations",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Students, subjects, and exam scores with zero-score rows."
+    },
+    {
+      "id": "1285",
+      "title": "Find the Start and End Number of Continuous Ranges",
+      "directory": "1285-find-the-start-and-end-number-of-continuous-ranges",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Continuous ranges of log_id in Logs."
+    },
+    {
+      "id": "1294",
+      "title": "Weather Type in Each Country",
+      "directory": "1294-weather-type-in-each-country",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Dominant weather type per country from Weather."
     }
   ]
 }
