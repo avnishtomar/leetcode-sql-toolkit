@@ -406,6 +406,114 @@
       "seed": "seed.sql",
       "difficulty": "Easy",
       "description": "Swap sex values m/f for every row in Salary."
+    },
+    {
+      "id": "1045",
+      "title": "Customers Who Bought All Products",
+      "directory": "1045-customers-who-bought-all-products",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Customers who purchased every product in the catalog."
+    },
+    {
+      "id": "1068",
+      "title": "Product Sales Analysis I",
+      "directory": "1068-product-sales-analysis-i",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Product name, year, price, and quantity from Sales and Product."
+    },
+    {
+      "id": "1069",
+      "title": "Product Sales Analysis II",
+      "directory": "1069-product-sales-analysis-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Sales totals by product with no sales in the first year."
+    },
+    {
+      "id": "1070",
+      "title": "Product Sales Analysis III",
+      "directory": "1070-product-sales-analysis-iii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Products with increasing sales quantity every year."
+    },
+    {
+      "id": "1075",
+      "title": "Project Employees I",
+      "directory": "1075-project-employees-i",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Average experience years per project."
+    },
+    {
+      "id": "1076",
+      "title": "Project Employees II",
+      "directory": "1076-project-employees-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Projects with team average experience of at least five years."
+    },
+    {
+      "id": "1077",
+      "title": "Project Employees III",
+      "directory": "1077-project-employees-iii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Most experienced employee on each project."
+    },
+    {
+      "id": "1082",
+      "title": "Sales Analysis I",
+      "directory": "1082-sales-analysis-i",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Seller with the highest total sales price."
+    },
+    {
+      "id": "1083",
+      "title": "Sales Analysis II",
+      "directory": "1083-sales-analysis-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Buyers who purchased S8 but not iPhone."
+    },
+    {
+      "id": "1084",
+      "title": "Sales Analysis III",
+      "directory": "1084-sales-analysis-iii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Products never sold by each seller."
+    },
+    {
+      "id": "1097",
+      "title": "Game Play Analysis V",
+      "directory": "1097-game-play-analysis-v",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "First login and install dates per player from Activity."
+    },
+    {
+      "id": "1098",
+      "title": "Unpopular Books",
+      "directory": "1098-unpopular-books",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Available books with fewer than ten units sold in the last year."
     }
   ]
 }
