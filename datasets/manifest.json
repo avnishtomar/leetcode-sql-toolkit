@@ -514,6 +514,168 @@
       "seed": "seed.sql",
       "difficulty": "Medium",
       "description": "Available books with fewer than ten units sold in the last year."
+    },
+    {
+      "id": "1107",
+      "title": "New Users Daily Count",
+      "directory": "1107-new-users-daily-count",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Daily count of users who logged in for the first time."
+    },
+    {
+      "id": "1112",
+      "title": "Highest Grade For Each Student",
+      "directory": "1112-highest-grade-for-each-student",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Maximum grade per student across enrollments."
+    },
+    {
+      "id": "1113",
+      "title": "Reported Posts",
+      "directory": "1113-reported-posts",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Daily share of posts that received reports."
+    },
+    {
+      "id": "1126",
+      "title": "Active Businesses",
+      "directory": "1126-active-businesses",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Businesses with reviews, ads, and page views above thresholds."
+    },
+    {
+      "id": "1127",
+      "title": "User Purchase Platform",
+      "directory": "1127-user-purchase-platform",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Users who spent on both mobile and desktop each day."
+    },
+    {
+      "id": "1132",
+      "title": "Reported Posts II",
+      "directory": "1132-reported-posts-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Average daily share of posts removed after being reported."
+    },
+    {
+      "id": "1141",
+      "title": "User Activity for the Past 30 Days I",
+      "directory": "1141-user-activity-for-the-past-30-days-i",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Users active on at least three of the last 30 days."
+    },
+    {
+      "id": "1142",
+      "title": "User Activity for the Past 30 Days II",
+      "directory": "1142-user-activity-for-the-past-30-days-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Percentage of user sessions that were concurrent."
+    },
+    {
+      "id": "1148",
+      "title": "Article Views I",
+      "directory": "1148-article-views-i",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Viewers who viewed their own articles."
+    },
+    {
+      "id": "1149",
+      "title": "Article Views II",
+      "directory": "1149-article-views-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Authors whose articles were viewed by their viewers."
+    },
+    {
+      "id": "1158",
+      "title": "Market Analysis I",
+      "directory": "1158-market-analysis-i",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Buyers who bought their favorite brand in 2019."
+    },
+    {
+      "id": "1159",
+      "title": "Market Analysis II",
+      "directory": "1159-market-analysis-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Buyers who bought at least two items in 2019 but not in first quarter."
+    },
+    {
+      "id": "1164",
+      "title": "Product Price at a Given Date",
+      "directory": "1164-product-price-at-a-given-date",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Product prices on a specific date with default price 10."
+    },
+    {
+      "id": "1173",
+      "title": "Immediate Food Delivery I",
+      "directory": "1173-immediate-food-delivery-i",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Share of immediate food deliveries."
+    },
+    {
+      "id": "1174",
+      "title": "Immediate Food Delivery II",
+      "directory": "1174-immediate-food-delivery-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Percentage of immediate orders among all orders per customer."
+    },
+    {
+      "id": "1179",
+      "title": "Reformat Department Table",
+      "directory": "1179-reformat-department-table",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Pivot department revenue by month."
+    },
+    {
+      "id": "1193",
+      "title": "Monthly Transactions I",
+      "directory": "1193-monthly-transactions-i",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Approved transaction totals and counts by month and country."
+    },
+    {
+      "id": "1194",
+      "title": "Tournament Winners",
+      "directory": "1194-tournament-winners",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Group winners by total match points in Matches and Players."
     }
   ]
 }
