@@ -2224,6 +2224,321 @@
       "seed": "seed.sql",
       "difficulty": "Hard",
       "description": "LeetCode sample schema and data for Viewers Turned Streamers."
+    },
+    {
+      "id": "3050",
+      "title": "Pizza Toppings Cost Analysis",
+      "directory": "3050-pizza-toppings-cost-analysis",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Pizza Toppings Cost Analysis."
+    },
+    {
+      "id": "3051",
+      "title": "Find Candidates for Data Scientist Position",
+      "directory": "3051-find-candidates-for-data-scientist-position",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Find Candidates for Data Scientist Position."
+    },
+    {
+      "id": "3052",
+      "title": "Maximize Items",
+      "directory": "3052-maximize-items",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Maximize Items."
+    },
+    {
+      "id": "3053",
+      "title": "Classifying Triangles by Lengths",
+      "directory": "3053-classifying-triangles-by-lengths",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Classifying Triangles by Lengths."
+    },
+    {
+      "id": "3054",
+      "title": "Binary Tree Nodes",
+      "directory": "3054-binary-tree-nodes",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Binary Tree Nodes."
+    },
+    {
+      "id": "3055",
+      "title": "Top Percentile Fraud",
+      "directory": "3055-top-percentile-fraud",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Top Percentile Fraud."
+    },
+    {
+      "id": "3056",
+      "title": "Snaps Analysis",
+      "directory": "3056-snaps-analysis",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Snaps Analysis."
+    },
+    {
+      "id": "3057",
+      "title": "Employees Project Allocation",
+      "directory": "3057-employees-project-allocation",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Employees Project Allocation."
+    },
+    {
+      "id": "3058",
+      "title": "Friends With No Mutual Friends",
+      "directory": "3058-friends-with-no-mutual-friends",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Friends With No Mutual Friends."
+    },
+    {
+      "id": "3059",
+      "title": "Find All Unique Email Domains",
+      "directory": "3059-find-all-unique-email-domains",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Find All Unique Email Domains."
+    },
+    {
+      "id": "3060",
+      "title": "User Activities within Time Bounds",
+      "directory": "3060-user-activities-within-time-bounds",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for User Activities within Time Bounds."
+    },
+    {
+      "id": "3061",
+      "title": "Calculate Trapping Rain Water",
+      "directory": "3061-calculate-trapping-rain-water",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Calculate Trapping Rain Water."
+    },
+    {
+      "id": "3087",
+      "title": "Find Trending Hashtags",
+      "directory": "3087-find-trending-hashtags",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Trending Hashtags."
+    },
+    {
+      "id": "3089",
+      "title": "Find Bursty Behavior",
+      "directory": "3089-find-bursty-behavior",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Bursty Behavior."
+    },
+    {
+      "id": "3103",
+      "title": "Find Trending Hashtags II ",
+      "directory": "3103-find-trending-hashtags-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Find Trending Hashtags II ."
+    },
+    {
+      "id": "3118",
+      "title": "Friday Purchase III ",
+      "directory": "3118-friday-purchase-iii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Friday Purchase III ."
+    },
+    {
+      "id": "3124",
+      "title": "Find Longest Calls",
+      "directory": "3124-find-longest-calls",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Longest Calls."
+    },
+    {
+      "id": "3126",
+      "title": "Server Utilization Time",
+      "directory": "3126-server-utilization-time",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Server Utilization Time."
+    },
+    {
+      "id": "3140",
+      "title": "Consecutive Available Seats II",
+      "directory": "3140-consecutive-available-seats-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Consecutive Available Seats II."
+    },
+    {
+      "id": "3150",
+      "title": "Invalid Tweets II",
+      "directory": "3150-invalid-tweets-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Invalid Tweets II."
+    },
+    {
+      "id": "3156",
+      "title": "Employee Task Duration and Concurrent Tasks",
+      "directory": "3156-employee-task-duration-and-concurrent-tasks",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Employee Task Duration and Concurrent Tasks."
+    },
+    {
+      "id": "3166",
+      "title": "Calculate Parking Fees and Duration",
+      "directory": "3166-calculate-parking-fees-and-duration",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Calculate Parking Fees and Duration."
+    },
+    {
+      "id": "3172",
+      "title": "Second Day Verification",
+      "directory": "3172-second-day-verification",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Second Day Verification."
+    },
+    {
+      "id": "3182",
+      "title": "Find Top Scoring Students",
+      "directory": "3182-find-top-scoring-students",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Top Scoring Students."
+    },
+    {
+      "id": "3188",
+      "title": "Find Top Scoring Students II",
+      "directory": "3188-find-top-scoring-students-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Find Top Scoring Students II."
+    },
+    {
+      "id": "3198",
+      "title": "Find Cities in Each State",
+      "directory": "3198-find-cities-in-each-state",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Find Cities in Each State."
+    },
+    {
+      "id": "3220",
+      "title": "Odd and Even Transactions",
+      "directory": "3220-odd-and-even-transactions",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Odd and Even Transactions."
+    },
+    {
+      "id": "3230",
+      "title": "Customer Purchasing Behavior Analysis",
+      "directory": "3230-customer-purchasing-behavior-analysis",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Customer Purchasing Behavior Analysis."
+    },
+    {
+      "id": "3236",
+      "title": "CEO Subordinate Hierarchy",
+      "directory": "3236-ceo-subordinate-hierarchy",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for CEO Subordinate Hierarchy."
+    },
+    {
+      "id": "3246",
+      "title": "Premier League Table Ranking",
+      "directory": "3246-premier-league-table-ranking",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Premier League Table Ranking."
+    },
+    {
+      "id": "3252",
+      "title": "Premier League Table Ranking II",
+      "directory": "3252-premier-league-table-ranking-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Premier League Table Ranking II."
+    },
+    {
+      "id": "3262",
+      "title": "Find Overlapping Shifts",
+      "directory": "3262-find-overlapping-shifts",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Overlapping Shifts."
+    },
+    {
+      "id": "3268",
+      "title": "Find Overlapping Shifts II",
+      "directory": "3268-find-overlapping-shifts-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Find Overlapping Shifts II."
+    },
+    {
+      "id": "3278",
+      "title": "Find Candidates for Data Scientist Position II",
+      "directory": "3278-find-candidates-for-data-scientist-position-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Candidates for Data Scientist Position II."
+    },
+    {
+      "id": "3293",
+      "title": "Calculate Product Final Price",
+      "directory": "3293-calculate-product-final-price",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Calculate Product Final Price."
     }
   ]
 }
