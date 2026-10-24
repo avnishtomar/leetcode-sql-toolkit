@@ -1,0 +1,20 @@
+-- LeetCode 1341 — Movie Rating (practice fixture, MySQL 8.x)
+CREATE TABLE IF NOT EXISTS Movies (movie_id int, title varchar(30)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Users (user_id int, name varchar(30)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS MovieRating (movie_id int, user_id int, rating int, created_at date) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO Movies (movie_id, title) values ('1', 'Avengers');
+INSERT INTO Movies (movie_id, title) values ('2', 'Frozen 2');
+INSERT INTO Movies (movie_id, title) values ('3', 'Joker');
+INSERT INTO Users (user_id, name) values ('1', 'Daniel');
+INSERT INTO Users (user_id, name) values ('2', 'Monica');
+INSERT INTO Users (user_id, name) values ('3', 'Maria');
+INSERT INTO Users (user_id, name) values ('4', 'James');
+INSERT INTO MovieRating (movie_id, user_id, rating, created_at) values ('1', '1', '3', '2020-01-12');
+INSERT INTO MovieRating (movie_id, user_id, rating, created_at) values ('1', '2', '4', '2020-02-11');
+INSERT INTO MovieRating (movie_id, user_id, rating, created_at) values ('1', '3', '2', '2020-02-12');
+INSERT INTO MovieRating (movie_id, user_id, rating, created_at) values ('1', '4', '1', '2020-01-01');
+INSERT INTO MovieRating (movie_id, user_id, rating, created_at) values ('2', '1', '5', '2020-02-17');
+INSERT INTO MovieRating (movie_id, user_id, rating, created_at) values ('2', '2', '2', '2020-02-01');
+INSERT INTO MovieRating (movie_id, user_id, rating, created_at) values ('2', '3', '2', '2020-03-01');
+INSERT INTO MovieRating (movie_id, user_id, rating, created_at) values ('3', '1', '3', '2020-02-22');
+INSERT INTO MovieRating (movie_id, user_id, rating, created_at) values ('3', '2', '4', '2020-02-25');

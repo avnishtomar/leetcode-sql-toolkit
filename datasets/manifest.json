@@ -784,6 +784,141 @@
       "seed": "seed.sql",
       "difficulty": "Medium",
       "description": "Dominant weather type per country from Weather."
+    },
+    {
+      "id": "1303",
+      "title": "Find the Team Size",
+      "directory": "1303-find-the-team-size",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Team size for each employee_id in Employee."
+    },
+    {
+      "id": "1308",
+      "title": "Running Total for Different Genders",
+      "directory": "1308-running-total-for-different-genders",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Daily running score totals by gender in Scores."
+    },
+    {
+      "id": "1321",
+      "title": "Restaurant Growth",
+      "directory": "1321-restaurant-growth",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Seven-day moving average amount vs prior day in Customer."
+    },
+    {
+      "id": "1322",
+      "title": "Ads Performance",
+      "directory": "1322-ads-performance",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Click-through rate per ad_id from Ads actions."
+    },
+    {
+      "id": "1327",
+      "title": "List the Products Ordered in a Period",
+      "directory": "1327-list-the-products-ordered-in-a-period",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Products with at least 100 units ordered in February 2020."
+    },
+    {
+      "id": "1336",
+      "title": "Number of Transactions per Visit",
+      "directory": "1336-number-of-transactions-per-visit",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Distribution of transaction counts per bank visit."
+    },
+    {
+      "id": "1341",
+      "title": "Movie Rating",
+      "directory": "1341-movie-rating",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Top user by reviews and top movie by average rating in February 2020."
+    },
+    {
+      "id": "1350",
+      "title": "Students With Invalid Departments",
+      "directory": "1350-students-with-invalid-departments",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Students whose department_id is missing from Departments."
+    },
+    {
+      "id": "1355",
+      "title": "Activity Participants",
+      "directory": "1355-activity-participants",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Activities with neither minimum nor maximum participant counts."
+    },
+    {
+      "id": "1364",
+      "title": "Number of Trusted Contacts of a Customer",
+      "directory": "1364-number-of-trusted-contacts-of-a-customer",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Customers with enough trusted contacts for high-value invoices."
+    },
+    {
+      "id": "1369",
+      "title": "Get the Second Most Recent Activity",
+      "directory": "1369-get-the-second-most-recent-activity",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Second most recent UserActivity row per user."
+    },
+    {
+      "id": "1378",
+      "title": "Replace Employee ID With The Unique Identifier",
+      "directory": "1378-replace-employee-id-with-the-unique-identifier",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Map Employees.id to EmployeeUNI.unique_id."
+    },
+    {
+      "id": "1384",
+      "title": "Total Sales Amount by Year",
+      "directory": "1384-total-sales-amount-by-year",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Yearly total sales from Product and Sales periods."
+    },
+    {
+      "id": "1393",
+      "title": "Capital Gain/Loss",
+      "directory": "1393-capital-gainloss",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Net capital gain or loss per stock from Stocks trades."
+    },
+    {
+      "id": "1398",
+      "title": "Customers Who Bought Products A and B but Not C",
+      "directory": "1398-customers-who-bought-products-a-and-b-but-not-c",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Customers who ordered A and B but never C."
     }
   ]
 }

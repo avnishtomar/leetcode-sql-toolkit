@@ -1,0 +1,20 @@
+-- LeetCode 1327 — List the Products Ordered in a Period (practice fixture, MySQL 8.x)
+CREATE TABLE IF NOT EXISTS Products (product_id int, product_name varchar(40), product_category varchar(40)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Orders (product_id int, order_date date, unit int) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO Products (product_id, product_name, product_category) values ('1', 'Leetcode Solutions', 'Book');
+INSERT INTO Products (product_id, product_name, product_category) values ('2', 'Jewels of Stringology', 'Book');
+INSERT INTO Products (product_id, product_name, product_category) values ('3', 'HP', 'Laptop');
+INSERT INTO Products (product_id, product_name, product_category) values ('4', 'Lenovo', 'Laptop');
+INSERT INTO Products (product_id, product_name, product_category) values ('5', 'Leetcode Kit', 'T-shirt');
+INSERT INTO Orders (product_id, order_date, unit) values ('1', '2020-02-05', '60');
+INSERT INTO Orders (product_id, order_date, unit) values ('1', '2020-02-10', '70');
+INSERT INTO Orders (product_id, order_date, unit) values ('2', '2020-01-18', '30');
+INSERT INTO Orders (product_id, order_date, unit) values ('2', '2020-02-11', '80');
+INSERT INTO Orders (product_id, order_date, unit) values ('3', '2020-02-17', '2');
+INSERT INTO Orders (product_id, order_date, unit) values ('3', '2020-02-24', '3');
+INSERT INTO Orders (product_id, order_date, unit) values ('4', '2020-03-01', '20');
+INSERT INTO Orders (product_id, order_date, unit) values ('4', '2020-03-04', '30');
+INSERT INTO Orders (product_id, order_date, unit) values ('4', '2020-03-04', '60');
+INSERT INTO Orders (product_id, order_date, unit) values ('5', '2020-02-25', '50');
+INSERT INTO Orders (product_id, order_date, unit) values ('5', '2020-02-27', '50');
+INSERT INTO Orders (product_id, order_date, unit) values ('5', '2020-03-01', '50');

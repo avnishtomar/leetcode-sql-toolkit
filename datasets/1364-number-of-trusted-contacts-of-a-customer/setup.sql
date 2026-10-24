@@ -1,0 +1,20 @@
+-- LeetCode 1364 — Number of Trusted Contacts of a Customer (practice fixture, MySQL 8.x)
+CREATE TABLE IF NOT EXISTS Customers (customer_id int, customer_name varchar(20), email varchar(30)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Contacts (user_id int, contact_name varchar(20), contact_email varchar(30)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Invoices (invoice_id int, price int, user_id int) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO Customers (customer_id, customer_name, email) values ('1', 'Alice', 'alice@leetcode.com');
+INSERT INTO Customers (customer_id, customer_name, email) values ('2', 'Bob', 'bob@leetcode.com');
+INSERT INTO Customers (customer_id, customer_name, email) values ('13', 'John', 'john@leetcode.com');
+INSERT INTO Customers (customer_id, customer_name, email) values ('6', 'Alex', 'alex@leetcode.com');
+INSERT INTO Contacts (user_id, contact_name, contact_email) values ('1', 'Bob', 'bob@leetcode.com');
+INSERT INTO Contacts (user_id, contact_name, contact_email) values ('1', 'John', 'john@leetcode.com');
+INSERT INTO Contacts (user_id, contact_name, contact_email) values ('1', 'Jal', 'jal@leetcode.com');
+INSERT INTO Contacts (user_id, contact_name, contact_email) values ('2', 'Omar', 'omar@leetcode.com');
+INSERT INTO Contacts (user_id, contact_name, contact_email) values ('2', 'Meir', 'meir@leetcode.com');
+INSERT INTO Contacts (user_id, contact_name, contact_email) values ('6', 'Alice', 'alice@leetcode.com');
+INSERT INTO Invoices (invoice_id, price, user_id) values ('77', '100', '1');
+INSERT INTO Invoices (invoice_id, price, user_id) values ('88', '200', '1');
+INSERT INTO Invoices (invoice_id, price, user_id) values ('99', '300', '2');
+INSERT INTO Invoices (invoice_id, price, user_id) values ('66', '400', '2');
+INSERT INTO Invoices (invoice_id, price, user_id) values ('55', '500', '13');
+INSERT INTO Invoices (invoice_id, price, user_id) values ('44', '60', '6');

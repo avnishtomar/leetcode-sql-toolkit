@@ -1,0 +1,21 @@
+-- LeetCode 1336 — Number of Transactions per Visit (practice fixture, MySQL 8.x)
+CREATE TABLE IF NOT EXISTS Visits (user_id int, visit_date date) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE IF NOT EXISTS Transactions (user_id int, transaction_date date, amount int) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO Visits (user_id, visit_date) values ('1', '2020-01-01');
+INSERT INTO Visits (user_id, visit_date) values ('2', '2020-01-02');
+INSERT INTO Visits (user_id, visit_date) values ('12', '2020-01-01');
+INSERT INTO Visits (user_id, visit_date) values ('19', '2020-01-03');
+INSERT INTO Visits (user_id, visit_date) values ('1', '2020-01-02');
+INSERT INTO Visits (user_id, visit_date) values ('2', '2020-01-03');
+INSERT INTO Visits (user_id, visit_date) values ('1', '2020-01-04');
+INSERT INTO Visits (user_id, visit_date) values ('7', '2020-01-11');
+INSERT INTO Visits (user_id, visit_date) values ('9', '2020-01-25');
+INSERT INTO Visits (user_id, visit_date) values ('8', '2020-01-28');
+INSERT INTO Transactions (user_id, transaction_date, amount) values ('1', '2020-01-02', '120');
+INSERT INTO Transactions (user_id, transaction_date, amount) values ('2', '2020-01-03', '22');
+INSERT INTO Transactions (user_id, transaction_date, amount) values ('7', '2020-01-11', '232');
+INSERT INTO Transactions (user_id, transaction_date, amount) values ('1', '2020-01-04', '7');
+INSERT INTO Transactions (user_id, transaction_date, amount) values ('9', '2020-01-25', '33');
+INSERT INTO Transactions (user_id, transaction_date, amount) values ('9', '2020-01-25', '66');
+INSERT INTO Transactions (user_id, transaction_date, amount) values ('8', '2020-01-28', '1');
+INSERT INTO Transactions (user_id, transaction_date, amount) values ('9', '2020-01-25', '99');
