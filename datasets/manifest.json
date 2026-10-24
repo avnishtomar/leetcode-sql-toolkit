@@ -1261,6 +1261,348 @@
       "seed": "seed.sql",
       "difficulty": "Medium",
       "description": "LeetCode sample schema and data for Number of Calls Between Two Persons."
+    },
+    {
+      "id": "1709",
+      "title": "Biggest Window Between Visits",
+      "directory": "1709-biggest-window-between-visits",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Maximum gap in days between consecutive visits per user."
+    },
+    {
+      "id": "1715",
+      "title": "Count Apples and Oranges",
+      "directory": "1715-count-apples-and-oranges",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Total apples and oranges in boxes plus linked chests."
+    },
+    {
+      "id": "1729",
+      "title": "Find Followers Count",
+      "directory": "1729-find-followers-count",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Follower count per user in Followers."
+    },
+    {
+      "id": "1731",
+      "title": "The Number of Employees Which Report to Each Employee",
+      "directory": "1731-the-number-of-employees-which-report-to-each-employee",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Direct reports count and average age per manager."
+    },
+    {
+      "id": "1741",
+      "title": "Find Total Time Spent by Each Employee",
+      "directory": "1741-find-total-time-spent-by-each-employee",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Total office minutes per employee per day."
+    },
+    {
+      "id": "1747",
+      "title": "Leetflex Banned Accounts",
+      "directory": "1747-leetflex-banned-accounts",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Accounts logged in from two IPs at overlapping times."
+    },
+    {
+      "id": "1757",
+      "title": "Recyclable and Low Fat Products",
+      "directory": "1757-recyclable-and-low-fat-products",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Product ids that are both low fat and recyclable."
+    },
+    {
+      "id": "1767",
+      "title": "Find the Subtasks That Did Not Execute",
+      "directory": "1767-find-the-subtasks-that-did-not-execute",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Missing subtask ids for each task in Tasks."
+    },
+    {
+      "id": "1777",
+      "title": "Product's Price for Each Store",
+      "directory": "1777-products-price-for-each-store",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Pivot product prices across store1, store2, store3."
+    },
+    {
+      "id": "1783",
+      "title": "Grand Slam Titles",
+      "directory": "1783-grand-slam-titles",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Grand slam win counts per player from Championships."
+    },
+    {
+      "id": "1789",
+      "title": "Primary Department for Each Employee",
+      "directory": "1789-primary-department-for-each-employee",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Primary or sole department per employee."
+    },
+    {
+      "id": "1795",
+      "title": "Rearrange Products Table",
+      "directory": "1795-rearrange-products-table",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Unpivot store columns into product_id, store, price rows."
+    },
+    {
+      "id": "1809",
+      "title": "Ad-Free Sessions",
+      "directory": "1809-ad-free-sessions",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Ad-Free Sessions."
+    },
+    {
+      "id": "1811",
+      "title": "Find Interview Candidates",
+      "directory": "1811-find-interview-candidates",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Find Interview Candidates."
+    },
+    {
+      "id": "1821",
+      "title": "Find Customers With Positive Revenue this Year",
+      "directory": "1821-find-customers-with-positive-revenue-this-year",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Find Customers With Positive Revenue this Year."
+    },
+    {
+      "id": "1831",
+      "title": "Maximum Transaction Each Day",
+      "directory": "1831-maximum-transaction-each-day",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Maximum Transaction Each Day."
+    },
+    {
+      "id": "1841",
+      "title": "League Statistics",
+      "directory": "1841-league-statistics",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for League Statistics."
+    },
+    {
+      "id": "1843",
+      "title": "Suspicious Bank Accounts",
+      "directory": "1843-suspicious-bank-accounts",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Suspicious Bank Accounts."
+    },
+    {
+      "id": "1853",
+      "title": "Convert Date Format",
+      "directory": "1853-convert-date-format",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Convert Date Format."
+    },
+    {
+      "id": "1867",
+      "title": "Orders With Maximum Quantity Above Average",
+      "directory": "1867-orders-with-maximum-quantity-above-average",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Orders With Maximum Quantity Above Average."
+    },
+    {
+      "id": "1873",
+      "title": "Calculate Special Bonus",
+      "directory": "1873-calculate-special-bonus",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for Calculate Special Bonus."
+    },
+    {
+      "id": "1875",
+      "title": "Group Employees of the Same Salary",
+      "directory": "1875-group-employees-of-the-same-salary",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "LeetCode sample schema and data for Group Employees of the Same Salary."
+    },
+    {
+      "id": "1890",
+      "title": "The Latest Login in 2020",
+      "directory": "1890-the-latest-login-in-2020",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "LeetCode sample schema and data for The Latest Login in 2020."
+    },
+    {
+      "id": "1892",
+      "title": "Page Recommendations II",
+      "directory": "1892-page-recommendations-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "LeetCode sample schema and data for Page Recommendations II."
+    },
+    {
+      "id": "1907",
+      "title": "Count Salary Categories",
+      "directory": "1907-count-salary-categories",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Account counts for low, average, and high salary buckets."
+    },
+    {
+      "id": "1917",
+      "title": "Leetcodify Friends Recommendations",
+      "directory": "1917-leetcodify-friends-recommendations",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Recommend non-friends who shared three songs on a day."
+    },
+    {
+      "id": "1919",
+      "title": "Leetcodify Similar Friends",
+      "directory": "1919-leetcodify-similar-friends",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Friends who listened to three same songs on a day."
+    },
+    {
+      "id": "1934",
+      "title": "Confirmation Rate",
+      "directory": "1934-confirmation-rate",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Per-user confirmed message rate from Signups and Confirmations."
+    },
+    {
+      "id": "1939",
+      "title": "Users That Actively Request Confirmation Messages",
+      "directory": "1939-users-that-actively-request-confirmation-messages",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Users with two confirmation requests within 24 hours."
+    },
+    {
+      "id": "1949",
+      "title": "Strong Friendship",
+      "directory": "1949-strong-friendship",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Friend pairs with at least three common friends."
+    },
+    {
+      "id": "1951",
+      "title": "All the Pairs With the Maximum Number of Common Followers",
+      "directory": "1951-all-the-pairs-with-the-maximum-number-of-common-followers",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "User pairs tied for most shared followers."
+    },
+    {
+      "id": "1965",
+      "title": "Employees With Missing Information",
+      "directory": "1965-employees-with-missing-information",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Ids present in only Employees or only Salaries."
+    },
+    {
+      "id": "1972",
+      "title": "First and Last Call On the Same Day",
+      "directory": "1972-first-and-last-call-on-the-same-day",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Users whose first and last daily call was with the same person."
+    },
+    {
+      "id": "1978",
+      "title": "Employees Whose Manager Left the Company",
+      "directory": "1978-employees-whose-manager-left-the-company",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Easy",
+      "description": "Low-salary employees whose manager_id is orphaned."
+    },
+    {
+      "id": "1988",
+      "title": "Find Cutoff Score for Each School",
+      "directory": "1988-find-cutoff-score-for-each-school",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Minimum exam score per school capacity from Exam."
+    },
+    {
+      "id": "1990",
+      "title": "Count the Number of Experiments",
+      "directory": "1990-count-the-number-of-experiments",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Medium",
+      "description": "Experiment counts for every platform and experiment name."
+    },
+    {
+      "id": "2004",
+      "title": "The Number of Seniors and Juniors to Join the Company",
+      "directory": "2004-the-number-of-seniors-and-juniors-to-join-the-company",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Hire counts under $70000 budget (seniors first)."
+    },
+    {
+      "id": "2010",
+      "title": "The Number of Seniors and Juniors to Join the Company II",
+      "directory": "2010-the-number-of-seniors-and-juniors-to-join-the-company-ii",
+      "file": "setup.sql",
+      "seed": "seed.sql",
+      "difficulty": "Hard",
+      "description": "Hired candidate ids under $70000 budget (seniors first)."
     }
   ]
 }

@@ -1,0 +1,12 @@
+-- LeetCode 1890 — The Latest Login in 2020 (practice fixture, MySQL 8.x)
+
+CREATE TABLE IF NOT EXISTS Logins (user_id int, time_stamp datetime) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+INSERT INTO Logins (user_id, time_stamp) values ('6', '2020-06-30 15:06:07');
+INSERT INTO Logins (user_id, time_stamp) values ('6', '2021-04-21 14:06:06');
+INSERT INTO Logins (user_id, time_stamp) values ('6', '2019-03-07 00:18:15');
+INSERT INTO Logins (user_id, time_stamp) values ('8', '2020-02-01 05:10:53');
+INSERT INTO Logins (user_id, time_stamp) values ('8', '2020-12-30 00:46:50');
+INSERT INTO Logins (user_id, time_stamp) values ('2', '2020-01-16 02:49:50');
+INSERT INTO Logins (user_id, time_stamp) values ('2', '2019-08-25 07:59:08');
+INSERT INTO Logins (user_id, time_stamp) values ('14', '2019-07-14 09:00:00');
+INSERT INTO Logins (user_id, time_stamp) values ('14', '2021-01-06 11:59:59');
